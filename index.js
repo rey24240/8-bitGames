@@ -29,7 +29,7 @@ app.use("/libcurl/", express.static(libcurlPath));
 app.use("/bareasmodule/", express.static(bareModulePath));
 
 app.get("/", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "index.html"));
+	res.sendFile(join(__dirname, publicPath, "index.html"));
 });
 app.use("/cdn", (req, res) => {
 	cdnProxy.web(req, res, {
