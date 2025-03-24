@@ -72,6 +72,54 @@
     "usesProxy": true
   },
   {
+    "name": "Happy Weels",
+    "image": "img/games/Happy Weels.jpeg",
+    "url": "https://files.crazygames.com/ruffle/happywheels.html",
+    "usesProxy": true
+  },
+  {
+    "name": "Kirka.io",
+    "image": "img/games/Kirka.jpeg",
+    "url": "https://games.crazygames.com/en_US/kirka-io/index.html",
+    "usesProxy": true
+  },
+  {
+    "name": "Basketball Stars",
+    "image": "img/games/Basketball stars.jpeg",
+    "url": "/misc/play/basketball-stars.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Smash Karts",
+    "image": "img/games/Smash Karts.jpeg",
+    "url": "https://smashkarts.io/",
+    "usesProxy": true
+  },
+  {
+    "name": "Racing Limits",
+    "image": "img/games/racing-limits.jpeg",
+    "url": "https://www.crazygames.com/embed/racing-limits",
+    "usesProxy": true
+  },
+  {
+    "name": "RPG Idle Clicker",
+    "image": "img/games/RPG Idle Clicker.jpeg",
+    "url": "https://www.crazygames.com/embed/rpg-idle-clicker-uzz",
+    "usesProxy": true
+  },
+  {
+    "name": "Punchers",
+    "image": "img/games/Punchers.jpe",
+    "url": "https://www.crazygames.com/embed/punchers",
+    "usesProxy": true
+  },
+  {
+    "name": "Smash Karts",
+    "image": "img/games/Smash Karts.jpeg",
+    "url": "https://smashkarts.io/",
+    "usesProxy": true
+  },
+  {
     "name": "BuildNow GG",
     "image": "/img/games/buildnowgg.png",
     "url": "https://cloudirector.is-a.dev/BuildNowGG/",
