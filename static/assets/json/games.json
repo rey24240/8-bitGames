@@ -61,18 +61,6 @@
   },
   {
     "name": "Rowdy City Wrestling",
-    "image": "/img/games/Unicycle Legend.jpeg",
-    "url": "/misc/play/unicycle-legend.html",
-    "usesProxy": false
-  },
-  {
-    "name": "Rowdy City Wrestling",
-    "image": "/img/games/Rowdy City Wrestling.jpeg",
-    "url": "/misc/play/rowdy-city-wrestling.html",
-    "usesProxy": false
-  },
-  {
-    "name": "Rowdy City Wrestling",
     "image": "/img/games/Rowdy City Wrestling.jpeg",
     "url": "/misc/play/rowdy-city-wrestling.html",
     "usesProxy": false
