@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Netflix",
+      "url": "https://www.netflix.com",
+      "image": "/img/apps/Netflix.jpeg"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com",
+      "image": "/img/apps/X.png"
+    },
+    {
+      "name": "Geforce NOW ",
+      "url": "https://play.geforcenow.com/mall/",
+      "image": "/img/apps/geforce now.jpeg"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.com/app",
+      "image": "/img/apps/Discord.png"
+    },
+    {
+      "name": "Xbox Cloud Gaming",
+      "url": "https://www.xbox.com/en-us/play",
+      "image": "/img/apps/Xbox Cloud Gaming.png"
+    },
+    {
+      "name": "Crazy Games",
+      "url": "https://www.crazygames.com/",
+      "image": "/img/apps/crazygames.png"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/",
+      "image": "/img/apps/spotify.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/en/",
+      "image": "/img/apps/tiktok.png"
+    }
+  ]
