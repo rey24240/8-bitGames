@@ -1,52 +1,38 @@
 [
   {
-    "name": "Request a game",
-    "image": "gforms.webp",
-    "url": "https://docs.google.com/forms/d/1rgGnjbEqm7imzUyNrBe3eb9mJsANaTnpHPxruBCh4w0/edit?usp=forms_home&ths=true&pli=1",
-    "new": true,
-    "proxy": true
+    "name": "[!!] Request A Game",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgWDnw_ZCQWNbGhv999YYjFYY6zd4Bmw8gxR-IpbXdZ2voPw/viewform?usp=sharing",
+    "image": "/img/gforms.webp",
+    "usesProxy": false
   },
   {
     "name": "Cod Zombies",
-    "image": "cod zombie.webp",
+    "image": "img/games/cod zombie.webp",
     "url": "https://nzp.gay/",
-    "new": true,
-    "top": true,
-    "proxy": true
+    "usesProxy": true
   },
   {
     "name": "1v1.lol",
-    "image": "1v1loll.png",
+    "image": "img/games/1v1loll.png",
     "url": "https://1v1.lol/",
-    "new": true,
-    "proxy": true
+    "usesProxy": true
   },
   {
     "name": "DeadShot.io",
-    "image": "deadshot.jpeg",
+    "image": "img/games/deadshot.jpeg",
     "url": "https://deadshot.io/",
-    "new": true,
-    "proxy": true
+    "usesProxy": true
   },
   {
     "name": "BuildNow GG",
-    "image": "buildnowgg.png",
+    "image": "/img/games/buildnowgg.png",
     "url": "https://cloudirector.is-a.dev/BuildNowGG/",
-    "new": true,
-    "proxy": true
+    "usesProxy": true
   },
   {
-    "name": "Cod Zombies",
-    "image": "cod zombie.webp",
-    "url": "https://nzp.gay/",
-    "new": true,
-    "proxy": true
-  },
-  {
-    "name": "Cod Zombies",
-    "image": "cod zombie.webp",
-    "url": "https://nzp.gay/",
-    "new": true,
-    "proxy": true
+    "name": "Agar.io",
+    "image": "/img/games/Agar.io.jpeg",
+    "url": "https://www.crazygames.com/embed/agario",
+    "usesProxy": true
   }
 ]
