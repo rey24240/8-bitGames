@@ -1,112 +1,421 @@
-import wisp from "wisp-server-node";
-import { createBareServer } from "@tomphttp/bare-server-node";
-import httpProxy from "http-proxy";
-import chalk from "chalk";
-import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
-import { libcurlPath } from "@mercuryworkshop/libcurl-transport";
-import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
-import { bareModulePath } from "@mercuryworkshop/bare-as-module3";
-import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
-import express from "express";
-import { createServer } from "node:http";
-import { join } from "node:path";
-import packageJson from "./package.json" with { type: "json" };
-import { fileURLToPath } from "node:url";
+const express = require("express");
+const http = require("http");
+const { createBareServer } = require("@tomphttp/bare-server-node");
+const path = require("path");
+const cors = require("cors");
 
-const cdnProxy = httpProxy.createProxyServer();
-const bare = createBareServer("/bare/");
-const __dirname = join(fileURLToPath(import.meta.url), "..");
-const app = express();
-const publicPath = "public";
-app.set("views", join(__dirname, publicPath, "html"));
+const axios = require("axios");
+const dotenv = require("dotenv");
+dotenv.config();
 
-app.use(express.static(publicPath));
-app.use("/uv/", express.static(uvPath));
-app.use("/epoxy/", express.static(epoxyPath));
-app.use("/baremux/", express.static(baremuxPath));
-app.use("/libcurl/", express.static(libcurlPath));
-app.use("/bareasmodule/", express.static(bareModulePath));
+const tokenLimit = 498000;
+let tokenUsage = 0;
 
-app.get("/", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "index.html"));
+const modelData = `
+gemma2-9b-it
+llama-3.3-70b-versatile
+llama-3.1-8b-instant
+llama3-70b-8192
+llama3-8b-8192
+mixtral-8x7b-32768
+llama-3.3-70b-versatile
+llama-3.3-70b-specdec
+llama-3.2-1b-preview
+llama-3.2-3b-preview
+deepseek-r1-distill-llama-70b
+deepseek-r1-distill-qwen-32b
+qwen-2.5-32b
+qwen-2.5-coder-32b
+`
+  .trim()
+  .split("\n")
+  .map((line) => {
+    return { name: line.trim() };
+  });
+
+let currentModelIndex = 0;
+let currentModel = modelData[currentModelIndex].name;
+
+function switchModel() {
+  currentModelIndex = (currentModelIndex + 1) % modelData.length;
+  currentModel = modelData[currentModelIndex].name;
+  tokenUsage = 0;
+  console.log(`Switched to model: ${currentModel}`);
+}
+
+const server = http.createServer();
+const app = express(server);
+
+app.use("/t/", (req, res, next) => {
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  next();
 });
-app.use("/cdn", (req, res) => {
-	cdnProxy.web(req, res, {
-		target: "https://gms.parcoil.com/",
-		changeOrigin: true,
-	});
+
+const bareServer = createBareServer("/t/");
+
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+app.use(cors());
+
+app.use((req, res, next) => {
+  if (path.extname(req.url) === ".js") {
+    res.setHeader("Content-Type", "application/javascript");
+  }
+  next();
 });
-app.get("/science", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "games.html"));
+
+app.post("/api/chat", async (req, res) => {
+  const { message, userId } = req.body;
+
+  if (!userId) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+
+  let conversation = activeConversations.get(userId) || [];
+  conversation.push({ role: "user", content: message });
+
+  try {
+    const response = await axios.post(
+      "https://api.groq.com/openai/v1/chat/completions",
+      {
+        model: currentModel,
+        messages: conversation,
+        temperature: 0.7,
+        max_tokens: 1024,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.API_KEY}`,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+    if (response.status === 429) {
+      switchModel();
+      const response = await axios.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        {
+          model: currentModel,
+          messages: conversation,
+          temperature: 0.7,
+          max_tokens: 1024,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${randomAPIKey}`,
+            "Content-Type": "application/json",
+          },
+        },
+      );
+      const aiResponse = response.data.choices[0].message.content;
+      conversation.push({ role: "assistant", content: aiResponse });
+
+      tokenUsage += response.data.usage.total_tokens;
+      if (conversation.length > 5) {
+        conversation = conversation.slice(-5);
+      }
+      if (tokenUsage >= tokenLimit) {
+        switchModel();
+      }
+
+      activeConversations.set(userId, conversation);
+
+      res.json({ response: aiResponse });
+    }
+    const aiResponse = response.data.choices[0].message.content;
+    conversation.push({ role: "assistant", content: aiResponse });
+
+    tokenUsage += response.data.usage.total_tokens;
+    if (conversation.length > 5) {
+      conversation = conversation.slice(-5);
+    }
+    if (tokenUsage >= tokenLimit) {
+      switchModel();
+    }
+
+    activeConversations.set(userId, conversation);
+
+    res.json({ response: aiResponse });
+  } catch (error) {
+    if (error.response && error.response.status === 429) {
+      res.status(429).json({ error: "Too many requests" });
+      switchModel();
+    } else if (error.response && error.response.status === 503) {
+      res.status(503).json({ error: "Service unavailable" });
+    } else {
+      res
+        .status(500)
+        .json({ error: "An error occurred while processing your request." });
+      console.log(error);
+    }
+  }
 });
-app.get("/play", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "play.html"));
+app.get("/api/usedTokens", (req, res) => {
+  res.json({ usedTokens: tokenUsage, model: currentModel });
 });
-app.get("/forum", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "forum.html"));
+
+app.post("/api/signUp", async (req, res) => {
+  let { password, username, premium = false, captchaResponse } = req.body;
+
+  if (!password || !username || !captchaResponse) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+  if (password.length < 6) {
+    return res.status(400).json({ error: "Password too short" });
+  }
+  if (username.length < 3) {
+    return res.status(400).json({ error: "Username too short" });
+  }
+
+  try {
+    const captchaVerifyResponse = await axios.post(
+      "https://hcaptcha.com/siteverify",
+      new URLSearchParams({
+        secret: process.env.hcaptchaSecret,
+        response: captchaResponse,
+      }),
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      },
+    );
+
+    if (!captchaVerifyResponse.data.success) {
+      console.log(captchaVerifyResponse.data["error-codes"]);
+      return res.status(400).json({ error: "Invalid CAPTCHA" });
+    }
+
+    const response = await axios.post(
+      "https://db.55gms.com/api/signup",
+      {
+        username,
+        password,
+        premium,
+      },
+      {
+        headers: {
+          Authorization: process.env.workerAUTH,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    res.status(200).json(response.data);
+  } catch (error) {
+    res
+      .status(500)
+      .json({ error: "An error occurred while processing your request." });
+    console.log(error);
+  }
 });
-app.get("/math", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "apps.html"));
+app.post("/api/login", async (req, res) => {
+  let { username, password } = req.body;
+
+  if (!username || !password) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+
+  try {
+    const response = await axios.post(
+      "https://db.55gms.com/api/login",
+      {
+        username,
+        password,
+      },
+      {
+        headers: {
+          Authorization: process.env.workerAUTH,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: "Invalid Email or password" });
+  }
 });
-app.get("/settings", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "settings.html"));
+app.post("/api/checkPremium", async (req, res) => {
+  let { uuid } = req.body;
+
+  if (!uuid) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+
+  try {
+    const response = await axios.post(
+      "https://db.55gms.com/api/users/premium",
+      {
+        uuid,
+      },
+      {
+        headers: {
+          Authorization: process.env.workerAUTH,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: error });
+  }
 });
-app.get("/go", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "go.html"));
+app.post("/api/uploadSave", async (req, res) => {
+  let saveData = req.body;
+  let uuid = req.headers["uuid"];
+
+  if (!saveData || !uuid) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+
+  try {
+    const response = await axios.post(
+      "https://db.55gms.com/api/users/uploadSave",
+      {
+        uuid,
+        saveData,
+      },
+      {
+        headers: {
+          Authorization: process.env.workerAUTH,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: error });
+  }
 });
-app.get("/package.json", (req, res) => {
-	res.json(packageJson);
+app.post("/api/readSave", async (req, res) => {
+  let { uuid } = req.body;
+
+  if (!uuid) {
+    return res.status(400).json({ error: "Not enough arguments" });
+  }
+
+  try {
+    const response = await axios.post(
+      "https://db.55gms.com/api/users/readSave",
+      {
+        uuid: uuid,
+      },
+      {
+        headers: {
+          Authorization: process.env.workerAUTH,
+          "Content-Type": "application/json",
+        },
+      },
+    );
+
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: error });
+  }
 });
-app.get("*", (req, res) => {
-	res.sendFile(join(__dirname, publicPath, "html", "404.html"));
+
+app.use((req, res, next) => {
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  next();
 });
-const server = createServer();
+app.use(express.static(path.join(__dirname, "static")));
+app.use((req, res, next) => {
+  if (req.method === "GET" && !path.extname(req.url)) {
+    const filePath = path.join(__dirname, "static", req.url + ".html");
+    res.sendFile(filePath, (err) => {
+      if (err) {
+        next();
+      }
+    });
+  } else {
+    next();
+  }
+});
+
+const routes = [
+  { path: "/a", file: "apps.html" },
+  { path: "/g", file: "games.html" },
+  { path: "/s", file: "settings.html" },
+  { path: "/!", file: "proxy.html" },
+  { path: "/", file: "index.html" },
+  { path: "/d", file: "dashboard.html" },
+  { path: "/e", file: "ai.html" },
+  { path: "/-", file: "media.html" },
+  { path: "/m", file: "media.html" }, // possibly change all navbars to use /m
+  { path: "/profile", file: "account.html" },
+  { path: "/login", file: "login.html" },
+  { path: "/signup", file: "signup.html" },
+  { path: "/l", file: "/assets/404/loading.html" },
+];
+
+routes.forEach((route) => {
+  app.get(route.path, (req, res) => {
+    res.sendFile(path.join(__dirname, "static", route.file));
+  });
+});
+
+app.use((req, res) => {
+  const notFoundPage = path.join(__dirname, "static", "404.html");
+  res.status(404).sendFile(notFoundPage);
+});
 
 server.on("request", (req, res) => {
-	if (bare.shouldRoute(req)) {
-		bare.routeRequest(req, res);
-	} else {
-		app(req, res);
-	}
+  try {
+    if (bareServer.shouldRoute(req)) {
+      bareServer.routeRequest(req, res);
+    } else {
+      app(req, res);
+    }
+  } catch (error) {
+    console.error("Request error:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 server.on("upgrade", (req, socket, head) => {
-	if (req.url.endsWith("/wisp/")) {
-		wisp.routeRequest(req, socket, head);
-	} else if (bare.shouldRoute(req)) {
-		bare.routeUpgrade(req, socket, head);
-	} else {
-		socket.end();
-	}
+  try {
+    if (bareServer.shouldRoute(req)) {
+      bareServer.routeUpgrade(req, socket, head);
+    } else {
+      socket.end();
+    }
+  } catch (error) {
+    console.error("Upgrade error:", error);
+    socket.end();
+  }
 });
 
-let port = parseInt(process.env.PORT || "");
-
-if (isNaN(port)) port = 8080;
+const activeConversations = new Map();
 
 server.on("listening", () => {
-	const address = server.address();
-	console.log("Listening on:");
-	console.clear();
-	console.log(
-		chalk.green(`🚀 Lunaar V6 Listening on http://localhost:${address.port}`),
-	);
-	console.log();
-	console.log(chalk.magenta(`🌙 Made by the Parcoil Network`));
-	console.log();
-	console.log(chalk.white(`⭐ Please Star on github`));
+  console.log(`\n------------------------------------`);
+  console.log(`🔗 URL: http://localhost:${process.env.PORT}`);
+  console.log(`------------------------------------\n`);
 });
 
-process.on("SIGINT", shutdown);
-process.on("SIGTERM", shutdown);
-
-function shutdown() {
-	console.log("SIGTERM signal received: closing HTTP server");
-	server.close();
-	bare.close();
-	process.exit(0);
+function shutdown(signal) {
+  console.log("-----------------------------------------------");
+  console.log(`  Shutting Down (Signal: ${signal})  `);
+  console.log("-----------------------------------------------\n");
+  server.close(() => {
+    console.log("  55GMS has shut down.");
+    process.exit(0);
+  });
 }
 
+process.on("SIGTERM", () => shutdown("SIGTERM"));
+process.on("SIGINT", () => shutdown("SIGINT"));
+
+// ...existing code...
+const PORT = process.env.PORT || 3000;
+// ...existing code...
 server.listen({
-	port,
+  port: PORT,
+});
+
+server.on("error", (error) => {
+  console.error("Server error:", error);
 });

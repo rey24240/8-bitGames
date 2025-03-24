@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  <script src="/assets/js/font.js"></script>
+  <script src="/assets/js/randomSentence.js?v=3"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/css/index.css?v=1" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="/assets/css/nav.css?v=3" />
+  <title>Google</title>
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Rednotsus" />
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="description" content="55GMS - Reds Exploit Corner - Join the discord for links!" />
+  <meta name="keywords"
+    content="unblocked games, 55gms tk, 55gms, reds exploit corner, games, unblocked, site, lanier, lanier middle school, gg, Minecraft, discord, chromebook, chromeos, rednotsus, vanillacraft, eaglercraft unblocked, resent client unblocked, fun, cool, proxy, slope unblocked, free, unblocked monkey mart, 555gms, 5gms, school" />
+  </script>
+  <script src="/assets/js/script.js?v=11"></script>
+  <script src="/assets/js/easteregg.min.js" async></script>
+
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <a id="nav-title" class='title' href="/">Reds Exploit Corner</a>
+      <a href="/g"><i class="fa-solid fa-gamepad">&nbsp;</i>Games</a>
+      <a href="/a"><i class="fa-solid fa-box-archive">&nbsp;</i>Apps</a>
+      <a href="/-"><i class="fa-solid fa-tv">&nbsp;</i>Media</a>
+      <a href="/e"><i class="fa-solid fa-robot"></i>&nbsp;</i>AI</a>
+      <a href="/s"><i class="fa-solid fa-gears">&nbsp;</i>Settings</a>
+      <a href="/profile"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </nav>
+  <h1 id="title">Reds Exploit Corner</h1>
+  <h1 id="sub">
+    &nbsp;
+  </h1>
+
+  <div style="text-align: center">
+    <br />
+    <form class="searchbar">
+      <input tag="searchbar" id="searchbar" placeholder="Search Google or Enter a Link" class="form__input"
+        autocomplete="off">
+    </form>
+    <div class="quicklinks">
+      <a class="quicklink" href="d"><img class='shortcut' src="/img/shortcuts/Dashboard.webp"></a>
+      <a class="quicklink" onclick="hire('https://discord.gg')"><img class='shortcut'
+          src="/img/shortcuts/Discord.webp"></a>
+      <a class="quicklink" onclick="hire('https://www.espn.com/watch/')"><img class='shortcut'
+          src="/img/shortcuts/ESPN.webp"></a>
+      <a class="quicklink" href='e'><img class='shortcut' src="/img/shortcuts/freegpt.webp"></a>
+      <a class="quicklink" onclick="hire('https://github.com')"><img class='shortcut'
+          src="/img/shortcuts/GitHub.webp"></a>
+      <a class="quicklink" onclick="hire('https://google.com')"><img class='shortcut'
+          src="/img/shortcuts/Google.webp"></a>
+      <a class="quicklink" onclick="hire('https://nowgg.lol')"><img class='shortcut'
+          src="/img/shortcuts/nowgg.webp"></a>
+      <a class="quicklink" href='-'><img class='shortcut' src="/img/shortcuts/gmsmovies.webp"></a>
+      <a class="quicklink" onclick="hire('https://tiktok.com')"><img class='shortcut'
+          src="/img/shortcuts/TikTok.webp"></a>
+      <a class="quicklink" onclick="hire('https://twitch.tv')"><img class='shortcut'
+          src="/img/shortcuts/Twitch.webp"></a>
+    </div>
+  </div>
+  <br>
+  <center>
+    <div class="ad">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6700774525685317"
+        crossorigin="anonymous"></script>
+      <!-- games -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6700774525685317" data-ad-slot="5324022054"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </center>
+  <div class="info">
+    <a class="infobtn" href='https://discord.gg/xdaJ6Wytsu'><i class="fa-brands fa-discord"></i></a>
+    <a class="infobtn" href="https://github.com/55gms/55gms"><i class="fa-brands fa-github"></i></a>
+  </div>
+  <script src="/assets/uv/js/index.js?v2"></script>
+  <script src="/assets/uv/js/hiring.js?v=2"></script>
+  <script src="/assets/uv/uv.bundle.js" defer></script>
+  <script src="/assets/uv/uv.config.js?cdn" defer></script>
+</body>
+
+</html>
