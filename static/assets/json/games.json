@@ -13,9 +13,69 @@
   },
   {
     "name": "1v1.lol",
-    "image": "img/games/1v1loll.png",
-    "url": "https://1v1.lol/",
-    "usesProxy": true
+    "image": "/img/games/1v1loll.png",
+    "url": "/misc/play/1v1lol.html",
+    "usesProxy": false
+  },
+  {
+    "name": "House of Hazards",
+    "image": "/img/games/House OF Hazards.jpeg",
+    "url": "/misc/play/house-of-hazards.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Cluster Rush",
+    "image": "/img/games/cluster rush.jpeg",
+    "url": "/misc/play/cluster-rush.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Snow Rider 3D",
+    "image": "/img/games/Snow Rider 3D.jpeg",
+    "url": "/misc/play/Snow-rider-3d.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Paper.io 2",
+    "image": "/img/games/Paper-io-2.jpeg",
+    "url": "/misc/play/paper-io-2.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Tag",
+    "image": "/img/games/Tag.jpeg",
+    "url": "/misc/play/Tag.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Tag 2",
+    "image": "/img/games/Tag-2.jpeg",
+    "url": "/misc/play/Tag 2 .html",
+    "usesProxy": false
+  },
+  {
+    "name": "Unicycle Hero",
+    "image": "/img/games/Unicycle hero.jpeg",
+    "url": "/misc/play/unicycle-hero.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Rowdy City Wrestling",
+    "image": "/img/games/Unicycle Legend.jpeg",
+    "url": "/misc/play/unicycle-legend.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Rowdy City Wrestling",
+    "image": "/img/games/Rowdy City Wrestling.jpeg",
+    "url": "/misc/play/rowdy-city-wrestling.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Rowdy City Wrestling",
+    "image": "/img/games/Rowdy City Wrestling.jpeg",
+    "url": "/misc/play/rowdy-city-wrestling.html",
+    "usesProxy": false
   },
   {
     "name": "DeadShot.io",
