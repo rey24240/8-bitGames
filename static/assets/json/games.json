@@ -30,9 +30,27 @@
     "usesProxy": false
   },
   {
-    "name": "Cluster Rush",
+    "name": "Santy is Home",
     "image": "/img/games/santy it home.jfif",
     "url": "https://html-classic.itch.zone/html/7079968/WebGL/index.html?v=1732313668",
+    "usesProxy": true
+  },
+  {
+    "name": "3D Night City",
+    "image": "/img/games/3D Night City.jfif",
+    "url": "https://www.twoplayergames.org/embed/3d-night-city",
+    "usesProxy": true
+  },
+  {
+    "name": "Getaway Shootout",
+    "image": "/img/games/getaway shootout.png",
+    "url": "https://www.twoplayergames.org/embed/getaway-shootout",
+    "usesProxy": true
+  },
+  {
+    "name": "Monkey Mart",
+    "image": "/img/games/monkey mart.jfif",
+    "url": "/e/2/monkey-mart/index.html",
     "usesProxy": true
   },
   {
