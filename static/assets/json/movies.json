@@ -1,0 +1,14 @@
+[
+    {
+      "name": "[!!] Request A Game",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgWDnw_ZCQWNbGhv999YYjFYY6zd4Bmw8gxR-IpbXdZ2voPw/viewform?usp=sharing",
+      "image": "/img/gforms.webp",
+      "usesProxy": true
+    },
+    {
+      "name": "Cod Zombies",
+      "image": "img/games/cod zombie.webp",
+      "url": "https://nzp.gay/",
+      "usesProxy": true
+    }
+]

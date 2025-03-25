@@ -109,14 +109,92 @@
   },
   {
     "name": "Punchers",
-    "image": "img/games/Punchers.jpe",
+    "image": "img/games/Punchers.jpeg",
     "url": "https://www.crazygames.com/embed/punchers",
     "usesProxy": true
   },
   {
-    "name": "Smash Karts",
-    "image": "img/games/Smash Karts.jpeg",
-    "url": "https://smashkarts.io/",
+    "name": "Sandbox City",
+    "image": "img/games/Sandbox City.jpeg",
+    "url": "https://www.crazygames.com/embed/sandbox-city---cars-zombies-ragdolls",
+    "usesProxy": true
+  },
+  {
+    "name": "Rally Racer Dirt",
+    "image": "img/games/Rally Racer Dirt.jpeg",
+    "url": "https://www.crazygames.com/embed/rally-racer-dirt",
+    "usesProxy": true
+  },
+  {
+    "name": "Sky Riders",
+    "image": "img/games/Sky Riders.jpeg",
+    "url": "https://www.crazygames.com/embed/sky-riders-buk",
+    "usesProxy": true
+  },
+  {
+    "name": "Xtreme City Drifting",
+    "image": "img/games/Xtreme City Drifting.jpeg",
+    "url": "https://www.crazygames.com/embed/xtreme-city-drifting",
+    "usesProxy": true
+  },
+  {
+    "name": "Pixel Warfare",
+    "image": "img/games/Pixel Warfare.jpeg",
+    "url": "https://www.crazygames.com/embed/pixel-warfare",
+    "usesProxy": true
+  },
+  {
+    "name": "Hazmob FPS: Online Shooter",
+    "image": "img/games/Hazmob FPS Online Shooter.jpeg",
+    "url": "https://www.crazygames.com/embed/hazmob-fps-online-shooter",
+    "usesProxy": true
+  },
+  {
+    "name": "Ragdoll Archers",
+    "image": "img/games/Ragdoll Archers.jpeg",
+    "url": "https://www.crazygames.com/embed/ragdoll-archers",
+    "usesProxy": true
+  },
+  {
+    "name": "Golf Orbit",
+    "image": "img/games/Golf Orbit.jpeg",
+    "url": "https://www.crazygames.com/embed/golf-orbit",
+    "usesProxy": true
+  },
+  {
+    "name": "Bank Robbery: Escape",
+    "image": "img/games/Bank Robbery Escape.jpeg",
+    "url": "https://www.crazygames.com/embed/bank-robbery-escape",
+    "usesProxy": true
+  },
+  {
+    "name": "Bank Robbery",
+    "image": "img/games/Bank Robbery.jpeg",
+    "url": "https://www.crazygames.com/embed/bank-robbery",
+    "usesProxy": true
+  },
+  {
+    "name": "Bank Robbery 2",
+    "image": "img/games/Bank Robbery 2.jpeg",
+    "url": "https://www.crazygames.com/embed/bank-robbery-2",
+    "usesProxy": true
+  },
+  {
+    "name": "Bank Robbery 3",
+    "image": "img/games/Bank Robbery 3.jpeg",
+    "url": "https://www.crazygames.com/embed/bank-robbery-3",
+    "usesProxy": true
+  },
+  {
+    "name": "BodyCamera Shooter",
+    "image": "img/games/BodyCamera Shooter.jpeg",
+    "url": "https://www.crazygames.com/embed/bodycamera-shooter",
+    "usesProxy": true
+  },
+  {
+    "name": "Fury Foot",
+    "image": "img/games/Fury Foot.jpeg",
+    "url": "https://www.crazygames.com/embed/anger-foot-3d",
     "usesProxy": true
   },
   {
