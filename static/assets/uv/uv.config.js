@@ -1,3 +1,4 @@
+
 self.__uv$config = {
   prefix: "/assets/uv/service/",
   bare: "/t/",
