@@ -6,20 +6,27 @@
     "usesProxy": false
   },
   {
+    "name": "[!!] Report A Bug",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQJ0_LfMCSCkS_Ptywn2SnwTsBMZ_13SqUWe4XQRanyRIxtQ/viewform?usp=sf_link",
+    "image": "/img/Bug Report.png",
+    "usesProxy": false
+  },
+  {
     "name": "Cod Zombies",
-    "image": "img/games/cod zombie.webp",
+    "image": "img/games/cod zombie.jpg",
     "url": "https://nzp.gay/",
     "usesProxy": true
   },
   {
-    "name": "1v1.lol",
-    "image": "/img/games/1v1loll.png",
-    "url": "/misc/play/1v1lol.html",
-    "usesProxy": false
+    "name": "Speed Stars",
+    "image": "/img/games/Speed Stars.jpeg",
+    "url": "https://games.poki.com/458768/4e34921f-95bf-499e-9a6c-9dbc0e5aa44d?tag=pg-05a4dd407bf22689455f850c83f2043f57ca033b&site_id=3&iso_lang=en&country=US&poki_url=https://poki.com/en/g/speed-stars",
+    "usesProxy": true
   },
+
   {
     "name": "House of Hazards",
-    "image": "/img/games/House OF Hazards.jpeg",
+    "image": "/img/games/House of Hazards.jpeg",
     "url": "/misc/play/house-of-hazards.html",
     "usesProxy": false
   },
@@ -31,33 +38,58 @@
   },
   {
     "name": "Santy is Home",
-    "image": "/img/games/santy it home.jfif",
+    "image": "/img/games/santy it home.jpeg",
     "url": "https://html-classic.itch.zone/html/7079968/WebGL/index.html?v=1732313668",
     "usesProxy": true
   },
   {
+    "name": "Meat Boy",
+    "image": "/img/games/Meat Boy.jpeg",
+    "url": "https://www.crazygames.com/embed/meat-boy",
+    "usesProxy": true
+  },
+  
+  {
     "name": "3D Night City",
-    "image": "/img/games/3D Night City.jfif",
+    "image": "/img/games/3D Night City.jpeg",
     "url": "https://www.twoplayergames.org/embed/3d-night-city",
     "usesProxy": true
   },
   {
-    "name": "Getaway Shootout",
-    "image": "/img/games/getaway shootout.png",
-    "url": "https://www.twoplayergames.org/embed/getaway-shootout",
-    "usesProxy": true
-  },
-  {
-    "name": "Monkey Mart",
-    "image": "/img/games/monkey mart.jfif",
-    "url": "/e/2/monkey-mart/index.html",
-    "usesProxy": true
-  },
-  {
-    "name": "Snow Rider 3D",
-    "image": "/img/games/Snow Rider 3D.jpeg",
-    "url": "/misc/play/Snow-rider-3d.html",
+    "name": "Minecraft 1.9",
+    "image": "/img/games/minecraft.jpg",
+    "url": "/misc/play/eag1_9_4.html",
     "usesProxy": false
+  },
+  {
+    "name": "Ragdoll Archers",
+    "image": "/img/games/Ragdoll Archers.jpeg",
+    "url": "https://www.crazygames.com/embed/ragdoll-archers",
+    "usesProxy": true
+  },
+  {
+    "name": "Rolling Balls Sea Race",
+    "image": "/img/games/Rolling Balls Sea Race.jpeg",
+    "url": "https://www.crazygames.com/embed/roling-balls-sea-race",
+    "usesProxy": true
+  },
+  {
+    "name": "Puppet Fighter 2 player",
+    "image": "/img/games/Puppet Fighter 2 Player.jpeg",
+    "url": "https://www.crazygames.com/embed/puppet-fighter-2-player",
+    "usesProxy": true
+  },
+  {
+    "name": "Mini-Caps Bombs",
+    "image": "/img/games/Mini-Caps Bombs.jpeg",
+    "url": "https://www.crazygames.com/embed/mini-caps-bombs",
+    "usesProxy": true
+  },
+  {
+    "name": "Planet Smash Destruction",
+    "image": "/img/games/planet smash destruction.jpeg",
+    "url": "https://www.crazygames.com/embed/solar-smash",
+    "usesProxy": true
   },
   {
     "name": "Paper.io 2",
@@ -73,7 +105,7 @@
   },
   {
     "name": "Tag 2",
-    "image": "/img/games/Tag-2.jpeg",
+    "image": "/img/games/Tag-2.png",
     "url": "/misc/play/Tag 2 .html",
     "usesProxy": false
   },
@@ -114,9 +146,23 @@
     "usesProxy": false
   },
   {
+    "name": "Arsonate",
+    "image": "img/games/Arsonate.jpeg",
+    "url": "https://html-classic.itch.zone/html/13170260/ARSONATE - WEBGL_DEMO - CURRENT_RELEASE/index.html",
+    "usesProxy": true
+  },
+  {
+    
     "name": "Smash Karts",
     "image": "img/games/Smash Karts.jpeg",
     "url": "https://smashkarts.io/",
+    "usesProxy": true
+  },
+  {
+    
+    "name": "Holey.io Battle Royale",
+    "image": "img/games/Holey.io Battle Royale.jpeg",
+    "url": "https://www.crazygames.com/embed/holey-io-battle-royale",
     "usesProxy": true
   },
   {
@@ -139,7 +185,7 @@
   },
   {
     "name": "Sandbox City",
-    "image": "img/games/Sandbox City.jpeg",
+    "image": "img/games/SandBox City.jpeg",
     "url": "https://www.crazygames.com/embed/sandbox-city---cars-zombies-ragdolls",
     "usesProxy": true
   },
@@ -171,12 +217,6 @@
     "name": "Hazmob FPS: Online Shooter",
     "image": "img/games/Hazmob FPS Online Shooter.jpeg",
     "url": "https://www.crazygames.com/embed/hazmob-fps-online-shooter",
-    "usesProxy": true
-  },
-  {
-    "name": "Ragdoll Archers",
-    "image": "img/games/Ragdoll Archers.jpeg",
-    "url": "https://www.crazygames.com/embed/ragdoll-archers",
     "usesProxy": true
   },
   {
@@ -223,13 +263,13 @@
   },
   {
     "name": "BuildNow GG",
-    "image": "/img/games/buildnowgg.png",
+    "image": "/img/games/buildnowgg.jpeg",
     "url": "https://cloudirector.is-a.dev/BuildNowGG/",
     "usesProxy": true
   },
   {
     "name": "Agar.io",
-    "image": "/img/games/Agar.io.jpeg",
+    "image": "/img/games/Agar.io.png",
     "url": "https://www.crazygames.com/embed/agario",
     "usesProxy": true
   }

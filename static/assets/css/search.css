@@ -6,6 +6,7 @@
 	text-align: center;
 	justify-content: center;
 	flex-direction: column;
+	
 }
 .search-container {
 	display: flex;
