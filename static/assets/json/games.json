@@ -268,9 +268,51 @@
     "usesProxy": true
   },
   {
-    "name": "Agar.io",
-    "image": "/img/games/Agar.io.png",
-    "url": "https://www.crazygames.com/embed/agario",
+    "name": "Combat Online",
+    "image": "/img/games/Combat Online.jpeg",
+    "url": "https://stickmanclash.com/",
+    "usesProxy": true
+  },
+  {
+    "name": "Striker Dummies",
+    "image": "/img/games/Striker Dummies.jpeg",
+    "url": "https://www.crazygames.com/embed/striker-dummies",
+    "usesProxy": true
+  },
+  {
+    "name": "Basketball Superstars",
+    "image": "/img/games/Basketball Superstars.jpeg",
+    "url": "https://www.crazygames.com/embed/basketball-superstars",
+    "usesProxy": true
+  },
+  {
+    "name": "Sports Hero",
+    "image": "/img/games/Sports Hero.jpeg",
+    "url": "https://www.crazygames.com/embed/sports-hero",
+    "usesProxy": true
+  },
+  {
+    "name": "MX Offroad Master",
+    "image": "/img/games/MX Offroad Master.jpeg",
+    "url": "https://www.crazygames.com/embed/mx-offroad-master",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Taco Mia",
+    "image": "/img/games/Papa's Taco Mia.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-taco-mia",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Pancakeria",
+    "image": "/img/games/Papa's Pancakeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-pancakeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Pizzeria",
+    "image": "/img/games/Papa's Pizzeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-pizzeria",
     "usesProxy": true
   }
 ]

@@ -52,16 +52,29 @@ h6 {
   box-shadow: 0 0 15px 2px #d6e4f5;}
 
 .game {
-  margin: 0.45rem;
+  margin: 1px;
   cursor: pointer;
   position: relative;
   display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .game img {
-  width: 235px;
-  height: 175px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+  white-space: nowrap;
+  animation: fadeIn .5s;
+  cursor: pointer;
+  width: 215px;
+  height: 125px;
+  background-color: #111217;
+  border: 1px solid #333333;
   border-radius: 10px;
-  transition: all 0.35s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
 }
 .game:hover img {
   box-shadow: 0 0 15px 2px black;
