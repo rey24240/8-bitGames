@@ -298,6 +298,78 @@
     "usesProxy": true
   },
   {
+    "name": "Papa's Scooperia",
+    "image": "/img/games/Papa's Scooperia.jpeg",
+    "url": "https://www.crazygames.com/embed/papa-s-scooperia",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Freezeria",
+    "image": "/img/games/Papa's Freezeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-freezeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Cheeseria",
+    "image": "/img/games/Papa's Cheeseria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-cheeseria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Bakeria",
+    "image": "/img/games/Papa's Bakeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-bakeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Sushiria",
+    "image": "/img/games/Papa's Sushiria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-sushiria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papas Cupcakeria",
+    "image": "/img/games/Papas Cupcakeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-cupcakeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Wingeria",
+    "image": "/img/games/Papa's Wingeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-wingeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Donuteria",
+    "image": "/img/games/Papa's Donuteria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-donuteria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Pancakeria",
+    "image": "/img/games/Papa's Pancakeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-pancakeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Hot Doggeria",
+    "image": "/img/games/Papa's Hot Doggeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-hotdoggeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Pastaria",
+    "image": "/img/games/Papa's Pastaria.jpeg",
+    "url": "https://www.crazygames.com/embed/papas-pastaria",
+    "usesProxy": true
+  },
+  {
+    "name": "Papa's Burgeria",
+    "image": "/img/games/Papa's Burgeria.jpeg",
+    "url": "https://www.crazygames.com/embed/papa-s-burgeria",
+    "usesProxy": true
+  },
+  {
     "name": "Papa's Taco Mia",
     "image": "/img/games/Papa's Taco Mia.jpeg",
     "url": "https://www.crazygames.com/embed/papas-taco-mia",
@@ -313,6 +385,12 @@
     "name": "Papa's Pizzeria",
     "image": "/img/games/Papa's Pizzeria.jpeg",
     "url": "https://www.crazygames.com/embed/papas-pizzeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Space Waves",
+    "image": "/img/games/Space Waves.jpeg",
+    "url": "https://www.crazygames.com/embed/space-waves",
     "usesProxy": true
   }
 ]
