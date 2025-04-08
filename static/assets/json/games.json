@@ -18,6 +18,12 @@
     "usesProxy": true
   },
   {
+    "name": "GeoGuessr",
+    "url": "https://www.worldguessr.com/",
+    "image": "/img/games/GeoGuessr.jpeg",
+    "usesProxy": false
+  },
+  {
     "name": "Speed Stars",
     "image": "/img/games/Speed Stars.jpeg",
     "url": "https://games.poki.com/458768/4e34921f-95bf-499e-9a6c-9dbc0e5aa44d?tag=pg-05a4dd407bf22689455f850c83f2043f57ca033b&site_id=3&iso_lang=en&country=US&poki_url=https://poki.com/en/g/speed-stars",

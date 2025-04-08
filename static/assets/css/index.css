@@ -2,10 +2,10 @@
 
 #title {
   font-size: 72px;
-  color: black;
+  color: white;
   box-shadow:  black;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   font-family: "Roboto", serif;
   text-align: center;
   padding-top: 0;
@@ -23,20 +23,20 @@
 .form__input {
   padding: 1.2vw;
   width: 50%;
-  border-radius: 5px;
+  border-radius: 20px;
   background:transparent;
-  box-shadow: 0 0 15px 2px black;
+  box-shadow: 0 0 15px 2px white;
   text-align: center;
   font-size: 24px;
   border: none;
   outline: none;
-  color: #b3000c;
+  color: white;
   transition: 0.2s;
   margin: 0;
 }
 
 .form__input::placeholder {
-  color: black;
+  color: white;
   text-align: center;
 }
 
