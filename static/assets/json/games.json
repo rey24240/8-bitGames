@@ -442,9 +442,15 @@
     "usesProxy": true
   },
   {
-    "name": "Idle Blogger Simulator",
-    "image": "/img/games/Jack Smith.jpeg",
-    "url": "https://www.crazygames.com/embed/idle-blogger-simulator",
+    "name": "Gearshift One",
+    "image": "/img/games/Gearshift One.jpeg",
+    "url": "https://www.crazygames.com/embed/gearshift-one",
+    "usesProxy": true
+  },
+  {
+    "name": "Slow Roads",
+    "image": "/img/games/slow roads.jpeg",
+    "url": "https://slowroads.io/",
     "usesProxy": true
   },
   {
