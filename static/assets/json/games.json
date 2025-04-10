@@ -24,6 +24,18 @@
     "usesProxy": false
   },
   {
+    "name": "GladiHoppers",
+    "url": "/misc/play/gladihoppers.html",
+    "image": "/img/games/GladiHoppers.jpeg",
+    "usesProxy": false
+  },
+  {
+    "name": "1v1.lol",
+    "url": "/misc/play/1v1lol.html",
+    "image": "/img/games/1v1loll.png",
+    "usesProxy": false
+  },
+  {
     "name": "Speed Stars",
     "image": "/img/games/Speed Stars.jpeg",
     "url": "https://games.poki.com/458768/4e34921f-95bf-499e-9a6c-9dbc0e5aa44d?tag=pg-05a4dd407bf22689455f850c83f2043f57ca033b&site_id=3&iso_lang=en&country=US&poki_url=https://poki.com/en/g/speed-stars",
@@ -391,6 +403,48 @@
     "name": "Papa's Pizzeria",
     "image": "/img/games/Papa's Pizzeria.jpeg",
     "url": "https://www.crazygames.com/embed/papas-pizzeria",
+    "usesProxy": true
+  },
+  {
+    "name": "Super Bike The Champion",
+    "image": "/img/games/Super Bike The Champion.jpeg",
+    "url": "https://www.crazygames.com/embed/super-bike-the-champion",
+    "usesProxy": true
+  },
+  {
+    "name": "Idle Blogger Simulator",
+    "image": "/img/games/Idle Blogger Simulator.jpeg",
+    "url": "https://www.crazygames.com/embed/idle-blogger-simulator",
+    "usesProxy": true
+  },
+  {
+    "name": "Squid Game Online",
+    "image": "/img/games/Squid Game Online.jpeg",
+    "url": "https://www.crazygames.com/embed/squid-game-online",
+    "usesProxy": true
+  },
+  {
+    "name": "Jack Smith",
+    "image": "/img/games/Jack Smith.jpeg",
+    "url": "https://www.coolmathgames.com/0-jacksmith/play",
+    "usesProxy": true
+  },
+  {
+    "name": "Noob: Zombie Prison Escape",
+    "image": "/img/games/Noob Zombie Prison Escape.jpeg",
+    "url": "https://www.crazygames.com/embed/noob-zombie-prison-escape",
+    "usesProxy": true
+  },
+  {
+    "name": "Noob Trolls Pro",
+    "image": "/img/games/Noob Trolls Pro.jpeg",
+    "url": "https://www.crazygames.com/embed/noob-trolls-pro",
+    "usesProxy": true
+  },
+  {
+    "name": "Idle Blogger Simulator",
+    "image": "/img/games/Jack Smith.jpeg",
+    "url": "https://www.crazygames.com/embed/idle-blogger-simulator",
     "usesProxy": true
   },
   {
