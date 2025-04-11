@@ -50,6 +50,31 @@ color: white;
   transition: 0.3s;
   background: black;
   box-shadow: 0 0 15px 2px #d6e4f5;}
+  #category-selector {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  #category-selector:focus {
+    border-color: #555555;
+  }
+  
+  #category-selector:click {
+    cursor: pointer;
+  }
 
 .game {
   margin: 2px;
@@ -66,7 +91,7 @@ color: white;
   white-space: nowrap;
   animation: fadeIn .5s;
   cursor: pointer;
-  width: 250px;
+  width: 290px;
   height: 150px;
   background-color: #111217;
   border: 1px solid #333333;

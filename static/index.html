@@ -38,8 +38,128 @@
           <div class="gradint"></div>
           <div class="gradint2"></div>
         </div>
-        <div id=""></div>
-  
+        <style>
+          /* Style the popup container */
+          #popupContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+          }
+        
+          /* Style the popup content */
+          #popupContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 60%;
+            max-width: 600px;
+          }
+        
+          /* Style the close button */
+          #closeButton {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #555;
+          }
+        
+          /* Style the heading */
+          #popupContent h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #333;
+          }
+        
+          /* Style the paragraph */
+          #popupContent p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #666;
+          }
+        
+          /* Style the links */
+          #popupContent a {
+            color: #007bff; /* Blue link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold;
+            transition: color 0.3s ease;
+          }
+        
+          #popupContent a:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: underline; /* Add underline on hover */
+          }
+        
+          /* Style the button */
+          #popupContent button {
+            padding: 12px 24px;
+            font-size: 1.1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+        
+          #popupContent button:hover {
+            background-color: #0056b3;
+          }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Welcome to My Website!</h1>
+        <p>Some content here...</p>
+        
+        <!-- Popup Container -->
+        <div id="popupContainer">
+          <div id="popupContent">
+            <span id="closeButton">&times;</span>
+            <h2>Welcome!</h2>
+            <p>Check out our <a href="https://www.example.com">website</a> for more information.</p>
+            <p>You can also visit our <a href="https://www.example.org">blog</a>.</p>
+            <button onclick="closePopup()">Close</button>
+          </div>
+        </div>
+        
+        <script>
+          // Function to show the popup
+          function showPopup() {
+            document.getElementById("popupContainer").style.display = "block";
+            localStorage.setItem('popupShown', 'true'); // Set flag in local storage
+          }
+        
+          // Function to close the popup
+          function closePopup() {
+            document.getElementById("popupContainer").style.display = "none";
+          }
+        
+          // Check if the popup has already been shown
+          window.onload = function() {
+            if (localStorage.getItem('popupShown') !== 'true') {
+              // Show the popup after a delay (e.g., 3 seconds)
+              setTimeout(showPopup, 3000);
+            }
+          };
+        
+          // Add event listener to the close button
+          document.getElementById("closeButton").addEventListener("click", closePopup);
+        </script>
       <br>
   <center>
   <div class="info">
@@ -51,7 +171,7 @@
   <script src="/assets/uv/js/hiring.js?v=2"></script>
   <script src="/assets/uv/uv.bundle.js" defer></script>
   <script src="/assets/uv/uv.config.js?cdn" defer></script>
-  <script src='assets/js/announcement.js'></script>
+  <script src='/announcement.js'></script>
   <script src="/assets/js/chatroom.js"></script>
 </body>
 

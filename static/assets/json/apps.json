@@ -35,6 +35,11 @@
       "image": "/img/apps/spotify.png"
     },
     {
+      "name": "UBSoftware",
+      "url": "https://www.ubisoft.com/en-us/",
+      "image": "/img/apps/ubisoft.png"
+    },
+    {
       "name": "TikTok",
       "url": "https://www.tiktok.com/en/",
       "image": "/img/apps/tiktok.png"

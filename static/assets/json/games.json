@@ -450,7 +450,67 @@
   {
     "name": "Slow Roads",
     "image": "/img/games/slow roads.jpeg",
-    "url": "https://slowroads.io/",
+    "url": "https://unblocked-games.s3.amazonaws.com/games/2024/more/slow-roads/index.html",
+    "usesProxy": true
+  },
+  {
+    "name": "Zombies Shooter Part 2",
+    "image": "/img/games/Zombies Shooter Part 2.jpeg",
+    "url": "https://www.crazygames.com/embed/zombies-shooter-part-2",
+    "usesProxy": true
+  },
+  {
+    "name": "MemeBattle What's That Meme?",
+    "image": "/img/games/MemeBattle What's That Meme.jpeg",
+    "url": "https://www.crazygames.com/embed/memebattle-what-s-that-meme",
+    "usesProxy": true
+  },
+  {
+    "name": "Funny Shooter 2",
+    "image": "/img/games/Funny Shooter 2.jpeg",
+    "url": "https://www.crazygames.com/embed/funny-shooter-2",
+    "usesProxy": true
+  },
+  {
+    "name": "Space Wars Battleground",
+    "image": "/img/games/Space Wars Battleground.jpeg",
+    "url": "https://www.crazygames.com/embed/space-wars-battleground",
+    "usesProxy": true
+  },
+  {
+    "name": "Space Wars Battleground",
+    "image": "/img/games/Toilets Worms Shooter.jpeg",
+    "url": "https://www.crazygames.com/embed/toilets-worms-shooter",
+    "usesProxy": true
+  },
+  {
+    "name": "Zombies Shooter",
+    "image": "/img/games/zombies shooter.jpeg",
+    "url": "https://www.crazygames.com/embed/zombies-shooter-part-1",
+    "usesProxy": true
+  },
+  {
+    "name": "Shell Shockers",
+    "image": "/img/games/shell shockers.jpeg",
+    "url": "https://shellshock.io/",
+    "usesProxy": true
+  },
+  {
+    "name": "Boxing Physics 2",
+    "image": "/img/games/Boxing Physics.jpeg",
+    "url": "/misc/play/boxingphysics2.html",
+    "usesProxy": false
+  },
+  {
+    "name": "Doge Miner",
+    "image": "/img/games/doge miner.jpeg",
+    "url": "https://dogeminer.se/",
+    "usesProxy": true
+  },
+  {
+    "name": "Doge Miner 2",
+    "image": "/img/games/doge miner 2.jpeg",
+    "url": "https://www.crazygames.com/embed/doge-miner-2",
     "usesProxy": true
   },
   {
