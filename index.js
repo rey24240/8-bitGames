@@ -410,7 +410,7 @@ process.on("SIGTERM", () => shutdown("SIGTERM"));
 process.on("SIGINT", () => shutdown("SIGINT"));
 
 server.listen({
-  port: process.env.PORT || 8080,
+  port: process.env.PORT || 3000,
 });
 
 server.on("error", (error) => {
