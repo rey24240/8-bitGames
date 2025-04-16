@@ -108,13 +108,15 @@ color: white;
 }
 
 .text {
+  padding: 10px;
+  background-color: #111217;
   font-family: "Roboto", serif;
   font-weight: 500;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: yellow;
+  color: white;
   font-size: 0.75rem;
   opacity: 0;
   transition: opacity 0.35s ease, transform 0.35s ease;
