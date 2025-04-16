@@ -2,7 +2,7 @@
     {
       "name": "Netflix",
       "url": "https://www.netflix.com",
-      "image": "/img/apps/Netflix.jpeg"
+      "image": "/img/apps/Netflix.jpg"
     },
     {
       "name": "x",
@@ -32,7 +32,7 @@
     {
       "name": "Spotify",
       "url": "https://open.spotify.com/",
-      "image": "/img/apps/spotify.png"
+      "image": "/img/apps/spotify.jpg"
     },
     {
       "name": "UBSoftware",
