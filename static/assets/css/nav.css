@@ -17,21 +17,20 @@
   font-family: "Roboto", serif;
   color: white;
 }
-
 .navbar a:not(:first-child) {
-  padding: 10px 15px;
-  font-size: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 650;
+  margin-left: 2%;
   border-radius: 2px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .navbar a:not(:first-child):hover {
-  font-size: 10px;
-  color: white; /* #bbbbbb is og */
-  background-color: black;
-  border-radius: 10px;
-  scale: 1.05;
+  transform: translateX(6px);
+  color: rgb(4, 61, 160); /* #bbbbbb is og */
+  background-color: white;
+  border-radius: 15px;
+  scale: 1.2;
 }
 
 .navbar a:first-child {
@@ -44,10 +43,10 @@
 }
 .navbar a:first-child:hover {
   transform: translateX(10px);
-  color: white; /* #bbbbbb is og */
-  background-color: black;
-  border-radius: 10px;
-  scale: 1.1;
+  color: rgb(4, 61, 160); /* #bbbbbb is og */
+  background-color: white;
+  border-radius: 15px;
+  scale: 1.2;
 }
 
 @media only screen and (max-width: 600px) {

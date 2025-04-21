@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
 	particles: {
-		number: { value: 160, density: { enable: true, value_area: 800 } },
+		number: { value: 250, density: { enable: true, value_area: 800 } },
 		color: { value: "#ffffff" },
 		shape: {
 			type: "circle",
@@ -11,12 +11,12 @@ particlesJS("particles-js", {
 		opacity: {
 			value: 1,
 			random: true,
-			anim: { enable: false, speed: 1, opacity_min: 0, sync: false },
+			anim: { enable: false, speed: 10, opacity_min: 0, sync: false },
 		},
 		size: {
 			value: 3,
 			random: true,
-			anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
+			anim: { enable: false, speed: 100, size_min: 100, sync: false },
 		},
 		line_linked: {
 			enable: false,
@@ -27,7 +27,7 @@ particlesJS("particles-js", {
 		},
 		move: {
 			enable: true,
-			speed: 1,
+			speed: 6,
 			direction: "none",
 			random: true,
 			straight: false,
