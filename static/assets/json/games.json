@@ -98,6 +98,12 @@
     "usesProxy": true
   },
   {
+    "name": "Drunken Boxing",
+    "image": "/img/games/Drunken Boxing.jpeg",
+    "url": "https://www.crazygames.com/embed/drunken-boxers",
+    "usesProxy": true
+  },
+  {
     "name": "Mini-Caps Bombs",
     "image": "/img/games/Mini-Caps Bombs.jpeg",
     "url": "https://www.crazygames.com/embed/mini-caps-bombs",
@@ -454,9 +460,15 @@
     "usesProxy": true
   },
   {
-    "name": "Zombies Shooter Part 2",
-    "image": "/img/games/Zombies Shooter Part 2.jpeg",
-    "url": "https://www.crazygames.com/embed/zombies-shooter-part-2",
+    "name": "Stone Grass Mowing Simulator",
+    "image": "/img/games/Stone Grass Mowing Simulator.jpeg",
+    "url": "https://www.crazygames.com/embed/stone-grass-mowing-simulator",
+    "usesProxy": true
+  },
+  {
+    "name": "Basketball Orbit",
+    "image": "/img/games/Basketball Orbit.jpeg",
+    "url": "https://www.crazygames.com/embed/basketball-orbit",
     "usesProxy": true
   },
   {
@@ -508,9 +520,81 @@
     "usesProxy": true
   },
   {
-    "name": "Doge Miner 2",
-    "image": "/img/games/doge miner 2.jpeg",
-    "url": "https://www.crazygames.com/embed/doge-miner-2",
+    "name": "Make sure Its Closed",
+    "image": "/img/games/Make sure Its Closed.jpeg",
+    "url": "https://html-classic.itch.zone/html/1342653/MSIC-WEBGL/index.html?v=1574335785",
+    "usesProxy": true
+  },
+  {
+    "name": "SkillWarz",
+    "image": "/img/games/SkillWarz.jpeg",
+    "url": "https://www.crazygames.com/embed/skillwarz",
+    "usesProxy": true
+  },
+  {
+    "name": "Kour.io",
+    "image": "/img/games/Kour.io.jpeg",
+    "url": "https://www.crazygames.com/embed/kour-io",
+    "usesProxy": true
+  },
+  {
+    "name": "Miniblox",
+    "image": "/img/games/Miniblox.jpeg",
+    "url": "https://www.crazygames.com/embed/miniblox",
+    "usesProxy": true
+  },
+  {
+    "name": "Hyper Cars Ramp Crash",
+    "image": "/img/games/Hyper Cars Ramp Crash.jpeg",
+    "url": "https://www.crazygames.com/embed/hyper-cars-ramp-crash",
+    "usesProxy": true
+  },
+  {
+    "name": "Ultimate Robo Duel 3D",
+    "image": "/img/games/Ultimate Robo Duel 3D.jpeg",
+    "url": "https://www.crazygames.com/embed/ultimate-robo-duel-3d",
+    "usesProxy": true
+  },
+  {
+    "name": "Funny Mad Racing",
+    "image": "/img/games/Funny Mad Racing.jpeg",
+    "url": "https://www.crazygames.com/embed/funny-mad-racing",
+    "usesProxy": true
+  },
+  {
+    "name": "Idle Planet: Gym Tycoon",
+    "image": "/img/games/Idle Planet Gym Tycoon.jpeg",
+    "url": "https://www.crazygames.com/embed/idle-planet-gym-tycoon",
+    "usesProxy": true
+  },
+  {
+    "name": "Ragdoll Arena 2 Player",
+    "image": "/img/games/Ragdoll Arena 2 Player.jpeg",
+    "url": "https://www.crazygames.com/embed/ragdoll-arena-2-player",
+    "usesProxy": true
+  },
+  {
+    "name": "Push My Chair",
+    "image": "/img/games/Push My Chair.jpeg",
+    "url": "https://www.crazygames.com/embed/push-my-chair",
+    "usesProxy": true
+  },
+  {
+    "name": "911: Prey",
+    "image": "/img/games/911 Prey.jpeg",
+    "url": "https://www.crazygames.com/embed/911-prey",
+    "usesProxy": true
+  },
+  {
+    "name": "Haunted School",
+    "image": "/img/games/Haunted School.jpeg",
+    "url": "https://www.crazygames.com/embed/haunted-school---horror-game",
+    "usesProxy": true
+  },
+  {
+    "name": "Evil Neighbor 3",
+    "image": "/img/games/Evil Neighbor 3.jpeg",
+    "url": "https://www.crazygames.com/embed/evil-neighbor-3",
     "usesProxy": true
   },
   {
