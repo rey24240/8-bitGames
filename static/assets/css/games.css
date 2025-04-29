@@ -121,8 +121,9 @@ color: white;
   animation: slide-out 0.35s ease forwards;
 }
 .game:hover .text {
-  opacity: 1;
+  opacity: 10;
   animation: slide-in 0.35s ease forwards;
+  
 }
 
 @keyframes slide-in {

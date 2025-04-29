@@ -74,10 +74,10 @@
     "usesProxy": true
   },
   {
-    "name": "Minecraft 1.9",
+    "name": "Minecraft 1.12.2",
     "image": "/img/games/minecraft.jpg",
-    "url": "/misc/play/eag1_9_4.html",
-    "usesProxy": false
+    "url": "https://eaglercraft.com/mc/1.12.2",
+    "usesProxy": true
   },
   {
     "name": "Ragdoll Archers",
@@ -596,6 +596,24 @@
     "image": "/img/games/Evil Neighbor 3.jpeg",
     "url": "https://www.crazygames.com/embed/evil-neighbor-3",
     "usesProxy": true
+  },
+  {
+    "name": "Italian Brainrot Clicker",
+    "image": "/img/games/Italian Brainrot Clicker.jpeg",
+    "url": "https://www.crazygames.com/embed/italian-brainrot-clicker-usp",
+    "usesProxy": true
+  },
+  {
+    "name": "Poxel.io",
+    "image": "/img/games/Poxel.io.jpeg",
+    "url": "https://poxel.io/",
+    "usesProxy": false
+  },
+  {
+    "name": "Jetpack Jump",
+    "image": "/img/games/Jetpack Jump.jpeg",
+    "url": "https://www.crazygames.com/embed/jetpack-jump",
+    "usesProxy": false
   },
   {
     "name": "Space Waves",
