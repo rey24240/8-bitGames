@@ -607,13 +607,19 @@
     "name": "Poxel.io",
     "image": "/img/games/Poxel.io.jpeg",
     "url": "https://poxel.io/",
-    "usesProxy": false
+    "usesProxy": true
   },
   {
     "name": "Jetpack Jump",
     "image": "/img/games/Jetpack Jump.jpeg",
     "url": "https://www.crazygames.com/embed/jetpack-jump",
-    "usesProxy": false
+    "usesProxy": true
+  },
+  {
+    "name": "Doors Castle",
+    "image": "/img/games/Doors Castle.jpeg",
+    "url": "https://www.crazygames.com/embed/doors-castle",
+    "usesProxy": true
   },
   {
     "name": "Space Waves",
