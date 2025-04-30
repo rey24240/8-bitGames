@@ -76,8 +76,8 @@
   {
     "name": "Minecraft 1.12.2",
     "image": "/img/games/minecraft.jpg",
-    "url": "https://eaglercraft.com/mc/1.12.2",
-    "usesProxy": true
+    "url": "https://eaglymc.com/web-javascript/",
+    "usesProxy": false
   },
   {
     "name": "Ragdoll Archers",
