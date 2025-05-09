@@ -36,6 +36,12 @@
     "usesProxy": true
   },
   {
+    "name": "New 1v1.lol",
+    "url": "https://1v1.lol/",
+    "image": "/img/games/New1v1lol.jpeg",
+    "usesProxy": true
+  },
+  {
     "name": "Speed Stars",
     "image": "/img/games/Speed Stars.jpeg",
     "url": "https://games.poki.com/458768/4e34921f-95bf-499e-9a6c-9dbc0e5aa44d?tag=pg-05a4dd407bf22689455f850c83f2043f57ca033b&site_id=3&iso_lang=en&country=US&poki_url=https://poki.com/en/g/speed-stars",
@@ -288,7 +294,19 @@
   {
     "name": "BuildNow GG",
     "image": "/img/games/buildnowgg.jpeg",
-    "url": "https://cloudirector.is-a.dev/BuildNowGG/",
+    "url": "https://www.crazygames.com/embed/buildnow-gg",
+    "usesProxy": true
+  },
+    {
+    "name": "Bloxd.io",
+    "image": "/img/games/bloxd.io.jpeg",
+    "url": "https://Bloxd.io/",
+    "usesProxy":true
+  },
+   {
+    "name": "Idle Zombie Wave: Survivors",
+    "image": "/img/games/Idle Zombie Wave Survivors.jpeg",
+    "url": "https://www.crazygames.com/embed/idle-zombie-wave",
     "usesProxy": true
   },
   {
@@ -641,7 +659,7 @@
   },
   {
     "name": "Supermarket Simulator Store Managerr",
-    "image": "/img/games/Supermarket Simulator Store Manager.jpegg",
+    "image": "/img/games/Supermarket Simulator Store Manager.jpeg",
     "url": "https://www.crazygames.com/embed/supermarket-simulator-cashier-game",
     "usesProxy": true
   },
