@@ -658,9 +658,39 @@
     "usesProxy": true
   },
   {
-    "name": "Supermarket Simulator Store Managerr",
+    "name": "Supermarket Simulator Store Manager",
     "image": "/img/games/Supermarket Simulator Store Manager.jpeg",
     "url": "https://www.crazygames.com/embed/supermarket-simulator-cashier-game",
+    "usesProxy": true
+  },
+   {
+    "name": "Epic Racing - Descent on Cars",
+    "image": "/img/games/Epic Racing - Descent on Cars.jpeg",
+    "url": "https://www.crazygames.com/embed/epic-racing---descent-on-cars",
+    "usesProxy": true
+  },
+  {
+    "name": "GoKarts.io",
+    "image": "/img/games/GoKarts-io.jpeg",
+    "url": "https://www.crazygames.com/embed/gokarts-io",
+    "usesProxy": true
+  },
+  {
+    "name": "Fortzone Battle Royale",
+    "image": "/img/games/Fortzone Battle Royale.jpeg",
+    "url": "https://www.crazygames.com/embed/fortzone-battle-royale-xkd",
+    "usesProxy": true
+  },
+  {
+    "name": "EV.io",
+    "image": "/img/games/EV-io.jpeg",
+    "url": "https://ev.io/",
+    "usesProxy": true
+  },
+  {
+    "name": "Overtide.io",
+    "image": "/img/games/Overtide-io.jpeg",
+    "url": "https://overtide.io/",
     "usesProxy": true
   },
   {

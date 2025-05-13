@@ -1,7 +1,7 @@
 {
-  "name": "55gms",
+  "name": "rey-games",
   "version": "2.0.1",
-  "description": "55gms game site",
+  "description": "Rey-Games",
   "main": "index.js",
   "scripts": {
     "start": "node ."
