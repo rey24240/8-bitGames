@@ -13,7 +13,7 @@ function hire(value) {
 
       // Pass the encoded url to the second page
       sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
-      location.href = "!";
+      location.href = "test.html";
     });
 }
 

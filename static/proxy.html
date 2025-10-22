@@ -2,24 +2,20 @@
 <html lang="en" class="notranslate" translate="no">
 
 <head>
-  <title>Google</title>
+  <title>Google Classroom</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <script src="/assets/js/script.js?v=11" async></script>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   <script src="/assets/js/frame.js?v=7"></script>
   <script crossorigin="anonymous" src="/assets/js/font.js"></script>
-  <script src="/assets/js/easteregg.min.js" async></script>
+    <link rel="stylesheet" href="/assets/css/sidebar.css?v=3" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <meta charset="utf-8" />
-  <meta http-equiv="Cache-control" content="public" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/particle.css" />
   <link href="/assets/css/science.css?2" rel="stylesheet" />
 </head>
 
-<body>
-  <script>
-    window.addEventListener("resize", navigator.keyboard.lock(["Escape"]));
-  </script>
-
-  <div class="bar">
+ <div class="bar">
     <div class="bar-left">
       &nbsp;&nbsp;<a class="button" onclick="back()" title="Go Back"><i class="fa-solid fa-arrow-left icon"></i></a>
       &nbsp;&nbsp;<a class="button" onclick="forward()" title="Go Forward"><i
@@ -43,7 +39,33 @@
   </div>
   <iframe src="" id="iframeid" style="bottom: 0" style="border: 0px #ffffff none" name="Iframe" scrolling="yes"
     frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
-</body>
+
+
+    </div>
+
+        <!-- FPS Counter -->
+        <div id="fps-counter" style="position:fixed;bottom:10px;right:10px;color:white;background:black;padding:5px 10px;border-radius:5px;z-index:9999;font-family:monospace;"></div>
+        <!-- Real-time Date and Time -->
+
+    
+<script>
+// FPS Counter Script
+let lastFrame = performance.now();
+let frames = 0;
+let fps = 0;
+function updateFPS() {
+    frames++;
+    const now = performance.now();
+    if (now - lastFrame >= 1000) {
+        fps = frames;
+        frames = 0;
+        lastFrame = now;
+        document.getElementById('fps-counter').textContent = `FPS: ${fps}`;
+    }
+    requestAnimationFrame(updateFPS);
+}
+updateFPS();
+</script>
 <script src="assets/uv/uv.bundle.js" defer></script>
 <script src="assets/uv/uv.config.js?cdn" defer></script>
 

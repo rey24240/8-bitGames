@@ -1,0 +1,20 @@
+body[theme="v6"] {
+  --primary-color: rgb(132, 1, 255);
+  --secondary-color: #9940ff;
+  --accent-color: rgb(132, 1, 255);
+  --bg-2-color: rgb(40, 0, 80);
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --text-secondary-color: #cccccc;
+  --text-placeholder-color: #999999;
+  --border-color: rgb(68, 0, 156);
+  --border-radius: 15px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  --blob-1: rgb(132, 1, 255);
+  --blob-2: rgb(132, 1, 255);
+  --blob-3: rgb(132, 1, 255);
+}

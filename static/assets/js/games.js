@@ -44,6 +44,18 @@ window.addEventListener("load", (event) => {
     console.error(error);
   }
 });
+function search() {
+    const input = document.getElementById('searchbar').value.toLowerCase();
+    const games = document.querySelectorAll('#game-container .game');
+    games.forEach(game => {
+        const name = game.querySelector('p.text').textContent.toLowerCase();
+        if (name.includes(input)) {
+            game.style.display = 'inline-block';
+        } else {
+            game.style.display = 'none';
+        }
+    });
+}
 
 function handleImageLoad(totalImages) {
   loadedImages++;

@@ -1,19 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-#title {
-  font-size: 72px;
-  color: white;
-  box-shadow:  black;
-  font-weight: bold;
-  margin-bottom: 50px;
-  font-family: "Roboto", serif;
-  text-align: center;
-  padding-top: 0;
+/* Grey Theme - index.css */
+body {
+  background-color: var(--bg-2-color);
+  color: #f5f5f5;
 }
 
-#sub {
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e0e0e0 !important;
+  text-shadow: 2px 2px 8px #232526;
+}
+
+a, .form__input {
+  color: #e0e0e0 !important;
+}
+
+.form__input::placeholder {
+  color: #bdbdbd !important;
+}
+
+#status-box, #clock, #fps-counter {
+  background-color: var(--bg-2-color) !important;
+  color: white !important;
+  border: 2px solid #7c4dff;
+  box-shadow: 0 2px 12px #232526;
+}
+
+
+/* Button styles */
+button, .infobtn {
+  background-color: var(--bg-2-color)
+   !important;
+  color: #fff !important;
+  border: 2px solid #7c4dff !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #232526;
+}
+button:hover, .infobtn:hover {
+  background: #7c4dff !important;
+  color: #fff !important;
+}
+
+/* Popup styles */
+#popupContainer, #popupContent {
+  background: rgba(65,67,69,0.97) !important;
+  color: #e0e0e0 !important;
+  border: 2px solid #757575;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #333639;
+}
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 5px;
+}
+
+#titles {
+ font-size: 72px;
+  outline-color: var(--border-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Roboto", serif;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+#small-title {
   font-size: 17px;
-  color: black;
+  color: #ffffff;
   margin-bottom: 2px;
   font-family: "Roboto", serif;
   text-align: center;
@@ -24,19 +82,19 @@
   padding: 1.2vw;
   width: 50%;
   border-radius: 20px;
-  background:transparent;
-  box-shadow: 0 0 15px 2px white;
+ border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+    background-color: var(--bg-2-color);
+  border: 2px solid var(--border-color);
   text-align: center;
   font-size: 24px;
-  border: none;
   outline: none;
-  color: white;
-  transition: 0.2s;
-  margin: 0;
+  color: #e0e0e0;
+  margin-bottom: 20px;
 }
 
 .form__input::placeholder {
-  color: white;
+  color: #bdbdbd;
   text-align: center;
 }
 
@@ -49,13 +107,13 @@
 }
 
 .quicklinks {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  max-width: 1000px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  left: 18%;
+  left: 45%;
 }
 
 .quicklink {
