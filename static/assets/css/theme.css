@@ -13,7 +13,6 @@ body[theme="v6"] {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
   --blob-1: rgb(132, 1, 255);
   --blob-2: rgb(132, 1, 255);
   --blob-3: rgb(132, 1, 255);
