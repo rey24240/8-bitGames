@@ -15,20 +15,21 @@
   <link href="/assets/css/gameframe.css?2" rel="stylesheet" />
 </head>
 
+
  <div id="gameframe">
         <div class="gameDisplay">
             <div class="game">
-             <iframe src=""id=""></iframe>
+             <iframe id="iframeid" src=""></iframe>
            </div>
             <div class="options">
                 <div class="left">
                     <div class="gametext">
-                        <img src="/img/games/Basketball stars.jpeg" class="gameicon" />
+                        <img src="/img/games/smashkarts.jpeg" class="gameicon" />
                         <div class="margin">
                             <div class="flex">
-                                <h1 class="titletext">BasketBall Stars</h1>
+                                <h1 class="titletext">Smash Karts</h1>
                             </div>
-                            <span class="bytext">By Madpuffers
+                            <span class="bytext">By JustPlay.LOL
                             </span>
                         </div>
                     </div>
@@ -42,7 +43,7 @@
     </div>
     
     <script>
-        var elem = document.getElementById("iframe");
+        var elem = document.getElementById("iframeid");
 
         function fullscreen() {
             if (elem.requestFullscreen) {
@@ -54,9 +55,20 @@
             }
         }
         function reload() {
-            document.getElementById("iframe").src += "";
+            document.getElementById("iframeid").src += "";
         }
         reloadbtn.onclick = reload;
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                // Reset iframe styles when exiting fullscreen to fix bug
+                elem.style.width = '';
+                elem.style.height = '';
+                elem.style.position = '';
+                elem.style.top = '';
+                elem.style.left = '';
+            }
+        });
     </script>
 
 

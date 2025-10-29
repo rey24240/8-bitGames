@@ -11,10 +11,18 @@
     "image": "/img/Bug Report.png",
     "usesProxy": false
   },
+  {
+    "name": "1v1.lol",
+    "url": "/misc/play/1v1.lol.html",
+    "image": "/img/games/1v1.lol.jfif",
+    "Creator": "Tall Games",
+    "usesProxy": false
+  },
     {
     "name": "Smash Karts",
     "url": "https://smashkarts.io/",
     "image": "/img/games/smashkarts.jpeg",
+    "Creator": "Tall Games",
     "usesProxy": true
   },
   {
