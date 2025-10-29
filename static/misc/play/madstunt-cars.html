@@ -99,6 +99,17 @@
             document.getElementById("iframe").src += "";
         }
         reloadbtn.onclick = reload;
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                // Reset iframe styles when exiting fullscreen to fix bug
+                elem.style.width = '';
+                elem.style.height = '';
+                elem.style.position = '';
+                elem.style.top = '';
+                elem.style.left = '';
+            }
+        });
     </script>
 </body>
 

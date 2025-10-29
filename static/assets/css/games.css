@@ -27,7 +27,7 @@ h6 {
   padding: 1vw;
   width: 40%;
   border-radius: 16px;
-  background: linear-gradient(90deg, #000 0%, rgb(132, 1, 255) 100%);
+  background: var(--bg-2-color);
   color: #a259ff;
   box-shadow: 0 2px 8px var(--bg-border-color);
   font-size: 24px;
@@ -37,6 +37,8 @@ h6 {
   margin: 0px 0px 20px 0px;
   transition: 0.3s;
   text-align: center;
+    border: 2px solid white;
+
 
 }
 
@@ -86,13 +88,13 @@ h6 {
     justify-content: center;
 }
 .game img {
-   width: 150px;
-  height: 150px;
+   width: 198px;
+    height: 175px;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 3px color var(--bg-2-color);
   background: var(--bg-2-color);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
- 
+  border: 2px solid white;
    border-radius: 10px;
   transition: all 0.35s ease;
 }
