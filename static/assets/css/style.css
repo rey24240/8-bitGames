@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+      font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+    
+}
+title {
+  padding: 20%;
+}
+
+main {
+  padding: 20px;
+  overflow-wrap: break-word;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #000a;
+}
+
+#gs {
+  cursor: pointer;
+  background: #ff4081;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #232526;
+  transition: all 0.2s;
+}
+#gs:hover {
+  background: #7c4dff;
+  color: #fff;
+  transform: scale(1.08);
+}
+#gs:active {
+  background: #232526;
+  color: #ff4081;
+  transform: scale(0.96);
+}
+
+.gs {
+  cursor: pointer;
+  background: #ff4081;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #232526;
+  transition: all 0.2s;
+}
+.gs:hover {
+  background: #7c4dff;
+  color: #fff;
+  transform: scale(1.08);
+}
+.gs:active {
+  color: #ff4081;
+  transform: scale(0.96);
+}
+
+.horizontal-items {
+  display: flex;
+  justify-content: left;
+}
+
+a {
+  color: #f1a727;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f1d41d;
+}
+
+/* Scrollbar settings */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+  transform: background 0.1s ease;
+}
+
+
+/* Neon green effect for daytime */
+

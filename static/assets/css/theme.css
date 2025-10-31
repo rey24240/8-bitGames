@@ -1,0 +1,82 @@
+body[theme="v6"] {
+  --primary-color: rgb(132, 1, 255);
+  --secondary-color: #9940ff;
+  --accent-color: rgb(132, 1, 255);
+  --bg-2-color: rgb(40, 0, 80);
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --text-secondary-color: #cccccc;
+  --text-placeholder-color: #999999;
+  --border-color: rgb(68, 0, 156);
+  --border-radius: 15px;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  --blob-1: rgb(132, 1, 255);
+  --blob-2: rgb(132, 1, 255);
+  --blob-3: rgb(132, 1, 255);
+}
+/* Halloween theme */
+body[theme="halloween"] {
+  --primary-color: #ff8c00;         /* pumpkin orange */
+  --secondary-color: #ffb86c;
+  --accent-color: #ff8c00;
+  --bg-2-color: #1b0420;            /* deep purple / near black */
+  --bg-color: #070007;              /* very dark */
+  --text-color: #ffeccf;            /* warm off-white */
+  --text-secondary-color: #ffdca8;
+  --text-placeholder-color: #bfa88a;
+  --border-color: #6b1f00;          /* dark brown/orange */
+  --border-radius: 15px;
+
+  /* subtle spooky background with radial "glow" blobs */
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255,140,0,0.08) 0, transparent 20%),
+    radial-gradient(circle at 85% 75%, rgba(138,43,226,0.06) 0, transparent 18%),
+    linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.65));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  --blob-1: #ff8c00;
+  --blob-2: #8a2be2;
+  --blob-3: #ff5f1f;
+}
+
+/* Christmas theme */
+body[theme="christmas"] {
+  --primary-color: #d72631;         /* festive red */
+  --secondary-color: #0b875b;       /* forest green */
+  --accent-color: #d72631;
+  --bg-2-color: #072018;            /* deep pine green */
+  --bg-color: #00110a;              /* almost-black green */
+  --text-color: #f6f7f2;            /* soft white */
+  --text-secondary-color: #dbeadf;
+  --text-placeholder-color: #9fb7aa;
+  --border-color: #083a2b;
+  --border-radius: 15px;
+
+  /* gentle holiday background with faint bokeh / snow dots */
+  background-image:
+    radial-gradient(circle at 8% 90%, rgba(215,38,49,0.06) 0, transparent 12%),
+    radial-gradient(circle at 85% 10%, rgba(11,135,91,0.06) 0, transparent 12%),
+    radial-gradient(circle at 50% 20%, rgba(255,255,255,0.02) 0, transparent 6%),
+    linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.55));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  --blob-1: #d72631;
+  --blob-2: #0b875b;
+  --blob-3: #ffd400;
+}
+
+/* small helpers so components that use blob variables keep visual consistency */
+body[theme="halloween"] .blob,
+body[theme="christmas"] .blob {
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+}
+
+/* optional: subtle transition when switching themes */
+:root, body[theme] {
+  transition: background-color 280ms ease, color 220ms ease, box-shadow 220ms ease;
+}

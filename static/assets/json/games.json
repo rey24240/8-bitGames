@@ -3,24 +3,62 @@
     "name": "[!!] Request A Game",
     "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgWDnw_ZCQWNbGhv999YYjFYY6zd4Bmw8gxR-IpbXdZ2voPw/viewform?usp=sharing",
     "image": "/img/gforms.webp",
-    "usesProxy": false
+    "usesProxy": false,
+    "categories": []
   },
   {
     "name": "[!!] Report A Bug",
     "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQJ0_LfMCSCkS_Ptywn2SnwTsBMZ_13SqUWe4XQRanyRIxtQ/viewform?usp=sf_link",
     "image": "/img/Bug Report.png",
-    "usesProxy": false
+    "usesProxy": false,
+    "categories": []
   },
-    {
+  {
+    "name": "1v1.lol",
+    "url": "/misc/play/1v1.lol.html",
+    "image": "/img/games/1v1.lol.jpeg",
+    "creator": "Tall Games",
+    "usesProxy": false,
+    "categories": ["Shooting", "2 player", "io", "Action"]
+  },
+  {
     "name": "Smash Karts",
     "url": "https://smashkarts.io/",
     "image": "/img/games/smashkarts.jpeg",
-    "usesProxy": true
+    "creator": "Tall Games",
+    "usesProxy": true,
+    "categories": ["Action", "Multiplayer", "io", "2 player"]
   },
   {
     "name": "Madalin Stunt Car 2",
     "url": "/misc/play/madstunt-cars.html",
-    "image": "/img/games/Madalin-stunt-car-2.jfif",
-    "usesProxy": false
+    "image": "/img/games/madalin-stunt-car-2.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Racing", "Multiplayer"]
+  },
+  {
+    "name": "Bloxors",
+    "url": "/misc/play/bloxors.html",
+    "image": "/img/games/bloxorz.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy"]
+  },
+    {
+    "name": "Madalin Stunt Car 2",
+    "url": "/misc/play/madstunt-cars.html",
+    "image": "/img/games/madalin-stunt-car-2.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Racing", "Multiplayer"]
+  },
+    {
+    "name": "Madalin Stunt Car 2",
+    "url": "/misc/play/madstunt-cars.html",
+    "image": "/img/games/madalin-stunt-car-2.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Racing", "Multiplayer"]
   }
 ]
