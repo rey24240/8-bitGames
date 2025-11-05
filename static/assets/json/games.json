@@ -15,10 +15,10 @@
   },
   {
     "name": "1v1.lol",
-    "url": "/misc/play/1v1.lol.html",
+    "url": "https://1v1lol.me/1v1lol/",
     "image": "/img/games/1v1.lol.jpeg",
-    "creator": "Tall Games",
-    "usesProxy": false,
+    "creator": "JustPlay.LOL",
+    "usesProxy": true,
     "categories": ["Shooting", "2 player", "io", "Action"]
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "name": "Madalin Stunt Car 2",
-    "url": "/misc/play/madstunt-cars.html",
+    "url": "/misc/madalin-stunt-car-2.html",
     "image": "/img/games/madalin-stunt-car-2.jpeg",
     "creator": "",
     "usesProxy": false,
@@ -45,20 +45,36 @@
     "usesProxy": false,
     "categories": ["Strategy"]
   },
-    {
-    "name": "Madalin Stunt Car 2",
-    "url": "/misc/play/madstunt-cars.html",
-    "image": "/img/games/madalin-stunt-car-2.jpeg",
-    "creator": "",
-    "usesProxy": false,
-    "categories": ["Racing", "Multiplayer"]
+   {
+    "name": "Big Tower Tiny Square",
+    "url": "https://html-classic.itch.zone/html/345957/index.html?v=1542781903",
+    "image": "/img/games/big-tower-tiny-square.png",
+    "creator": "Evil Objective",
+    "usesProxy": true,
+    "categories": ["Strategy"]
   },
-    {
-    "name": "Madalin Stunt Car 2",
-    "url": "/misc/play/madstunt-cars.html",
-    "image": "/img/games/madalin-stunt-car-2.jpeg",
-    "creator": "",
+  {
+    "name": "FL Tron",
+    "url": "https://games.crazygames.com/en-US/fl-tron/index.html?isNewUser=true&skipPreollFirstSession=true&v=1.344",
+    "image": "/img/games/fl tron.jpeg",
+    "creator": "Rampage Games",
+    "usesProxy": true,
+    "categories": ["Racing","Action","2 player"]
+  },
+  {
+    "name": "SchoolBoy Runaway",
+    "url": "/misc/play/schoolboy-runaway.html",
+    "image": "/img/games/SchoolBoy-Runaway.jpeg",
+    "creator": "Linked Squad",
     "usesProxy": false,
-    "categories": ["Racing", "Multiplayer"]
+    "categories": ["Action"]
+  },
+  {
+    "name": "R.E.P.O",
+    "url": "/misc/play/repo.html",
+    "image": "/img/games/R.E.P.O.jpeg",
+    "creator": "Semiwork Studios",
+    "usesProxy": false,
+    "categories": ["Action"]
   }
 ]

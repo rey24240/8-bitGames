@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+      <link rel="stylesheet" href="/assets/css/theme.css" />
   <script src="/assets/js/frame.js?v=7"></script>
   <script crossorigin="anonymous" src="/assets/js/font.js"></script>
     <link rel="stylesheet" href="/assets/css/sidebar.css?v=3" />
@@ -16,47 +17,28 @@
 </head>
 
 
- <!-- Begin sidebar (copied from site index; links made root-relative) -->
- <div class="sidebar">
-     <!-- Logo at the top of the sidebar with link -->
-     <a href="/index.html" class="logo-link">
-         <img class="logo" src="/img/images.png" alt="logo">
-     </a>
+  <div class="sidebar">
+        <!-- Logo at the top of the sidebar with link -->
+        <a href="/index.html" class="logo-link">
+        <img class="logo" src="img/images.png">
+        </a>
+        
+        <!-- Divider line -->
+        <div class="divider"></div>
 
-     <!-- Divider line -->
-     <div class="divider"></div>
+        <!-- Navigation items -->
+        <div class="nav-item"><a href="/index.html"><i class="fa fa-home" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/apps.html"><i class="fa fa-layer-group" style="color:var(--text-color);"></i></a></div> <!-- Account icon -->
+        <div class="nav-item selected"><a href="/games.html"><i class="fa fa-gamepad" style="color:var(--text-color);"></i></a></div> <!-- Joy-Con icon -->
+        
+        <!-- Divider line before About and Settings -->
+        <div class="divider"></div>
 
-     <!-- Navigation items -->
-     <div class="nav-item">
-         <a href="/index.html">
-             <i class="fa fa-home" style="color:white;"></i>
-         </a>
-     </div>
-     <div class="nav-item">
-         <a href="/apps.html">
-             <i class="bi bi-grid-fill" style="color:white;"></i>
-         </a>
-     </div>
-     <div class="nav-item selected">
-             <a href="/games.html">
-         <i class="fa-solid fa-gamepad" style="color:white;"></i>
-     </div>
-
-     <!-- Divider line before About and Settings -->
-     <div class="divider"></div>
-
-     <!-- About and Settings buttons -->
-     <div class="nav-item">
-         <a href="/Aboutpage.html">
-             <i class="fa fa-circle-info" style="color:white;"></i>
-         </a>
-     </div>
-     <div class="nav-item">
-         <a href="/settings.html">
-             <i class="fa fa-cogs" style="color:white;"></i>
-         </a>
-     </div>
-
+        <!-- New "About" and "Settings" buttons at the bottom -->
+        <div class="nav-item"><a href="/aboutpage.html"><i class="fa fa-circle-info" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/settings.html"><i class="fa fa-cogs" style="color:var(--text-color);"></i></a></div>
+    </div>
+    
      <div theme="v6">
          <div id="blobs">
              <div class="gradiant"></div>
@@ -75,13 +57,12 @@
             <div class="options">
                 <div class="left">
                     <div class="gametext">
-                        <img src="/img/games/smashkarts.jpeg" class="gameicon" />
+                        <img src="" class="gameicon" />
                         <div class="margin">
                             <div class="flex">
-                                <h1 class="titletext">Smash Karts</h1>
+                                <h1 class="titletext"></h1>
                             </div>
-                            <span class="bytext">By JustPlay.LOL
-                            </span>
+                            <span class="bytext"></span>
                         </div>
                     </div>
                 </div>
@@ -126,7 +107,7 @@
     </div>
 
         <!-- FPS Counter -->
-        <div id="fps-counter" style="position:fixed;bottom:10px;right:10px;color:white;background:black;padding:5px 10px;border-radius:5px;z-index:9999;font-family:monospace;"></div>
+        <div id="fps-counter" style="position:fixed;bottom:10px;right:10px;color:var(--text-color);background:var(--bg-color);padding:5px 10px;border-radius:5px;z-index:9999;font-family:monospace;"></div>
         <!-- Real-time Date and Time -->
 
     
@@ -170,13 +151,12 @@ document.addEventListener('DOMContentLoaded', function () {
                                         try { gImgPath = new URL(g.image, location.origin).pathname; } catch (e) { gImgPath = g.image; }
                                         return gImgPath === imgPath || gImgPath.split('/').pop() === filename;
                                 });
-                                // Fallbacks: if no image-match, try matching by the existing title text or by url filename
+                                // Fallbacks: try matching by sessionStorage gameUrl first
                                 if (!match) {
-                                    var currentTitle = (document.querySelector('.titletext') || {}).textContent || '';
-                                    currentTitle = currentTitle && currentTitle.trim();
-                                    if (currentTitle) {
+                                    var gameUrl = sessionStorage.getItem("gameUrl");
+                                    if (gameUrl) {
                                         match = games.find(function (g) {
-                                            return g.name && g.name.trim().toLowerCase() === currentTitle.toLowerCase();
+                                            return g.url === gameUrl;
                                         });
                                     }
                                 }
@@ -198,11 +178,20 @@ document.addEventListener('DOMContentLoaded', function () {
                                         });
                                     }
                                 }
+                                if (!match) {
+                                    var currentTitle = (document.querySelector('.titletext') || {}).textContent || '';
+                                    currentTitle = currentTitle && currentTitle.trim();
+                                    if (currentTitle) {
+                                        match = games.find(function (g) {
+                                            return g.name && g.name.trim().toLowerCase() === currentTitle.toLowerCase();
+                                        });
+                                    }
+                                }
                         if (match) {
                             var titleEl = document.querySelector('.titletext');
                             if (titleEl) titleEl.textContent = match.name;
                             var byEl = document.querySelector('.bytext');
-                            if (byEl && match.Creator) byEl.textContent = match.Creator;
+                            if (byEl && match.creator) byEl.textContent = "By " + match.creator;
                             // Update the displayed game image if the JSON provides one
                             if (match.image) {
                                 var icon = document.querySelector('.gameicon');

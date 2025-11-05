@@ -1,4 +1,3 @@
-
 function hire(value) {
   let iframe = document.querySelector(".iframe.active");
 
@@ -12,8 +11,9 @@ function hire(value) {
       else if (!(url.startsWith("https://") || url.startsWith("http://")))
         url = "https://" + url;
 
-      // Pass the encoded url to the second page
+      // Pass the encoded url and original url to the second page
       sessionStorage.setItem("encodedUrl", __uv$config.encodeUrl(url));
+      sessionStorage.setItem("gameUrl", url);
       location.href = "test.html";
     });
 }

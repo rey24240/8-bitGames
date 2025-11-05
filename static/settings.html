@@ -3,11 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Settings</title>
-    <script src="/assets/js/font.js"></script>
+  <title>Google Classroom</title>
+  <script src="/assets/js/font.js"></script>
+ <script src="/static/assets/js/settings.js"></script>
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="stylesheet" href="/assets/css/theme.css" />
+  <script src="/assets/js/theme.js"></script>
   <link rel="stylesheet" href="/assets/css/sidebar.css?v=3" />
+
+  </div>
+<body theme="default">
+    <div id="blobs">
+      <div class="gradiant"></div>
+      <div class="gradiant2"></div>
+      <div class="gradiant3"></div>
+    </div>
   <style>
     :root { --sidebar-offset: 220px; }
 
@@ -138,37 +148,31 @@
   </style>
 </head>
 <body>
-  <!-- INDEX SIDEBAR -->
-  <div class="sidebar" aria-label="Main sidebar">
-    <a href="/index.html" class="logo-link">
-      <img class="logo" src="/img/images.png" alt="logo">
-    </a>
 
-    <div class="divider"></div>
+   <div class="sidebar">
+        <!-- Logo at the top of the sidebar with link -->
+        <a href="/index.html" class="logo-link">
+        <img class="logo" src="img/images.png">
+        </a>
+        
+        <!-- Divider line -->
+        <div class="divider"></div>
 
-    <div class="nav-item selected">
-      <a href="/apps.html" title="Apps"><i class="fa fa-home" style="color:white;"></i></a>
-    </div>
-    <div class="nav-item">
-      <a href="/games.html" title="Games"><i class="bi bi-grid-fill" style="color:white;"></i></a>
-    </div>
-    <div class="nav-item">
-      <a href="/play.html" title="Play"><i class="fa-solid fa-gamepad" style="color:white;"></i></a>
-    </div>
+        <!-- Navigation items -->
+        <div class="nav-item"><a href="/index.html"><i class="fa fa-home" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/apps.html"><i class="fa fa-layer-group" style="color:var(--text-color);"></i></a></div> <!-- Account icon -->
+        <div class="nav-item"><a href="/games.html"><i class="fa fa-gamepad" style="color:var(--text-color);"></i></a></div> <!-- Joy-Con icon -->
+        
+        <!-- Divider line before About and Settings -->
+        <div class="divider"></div>
 
-    <div class="divider"></div>
-
-    <div class="nav-item">
-      <a href="/Aboutpage.html" title="About"><i class="fa fa-circle-info" style="color:white;"></i></a>
+        <!-- New "About" and "Settings" buttons at the bottom -->
+        <div class="nav-item"><a href="/aboutpage.html"><i class="fa fa-circle-info" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item selected"><a href="/settings.html"><i class="fa fa-cogs" style="color:var(--text-color);"></i></a></div>
     </div>
-    <div class="nav-item">
-      <a href="/settings.html" title="Settings"><i class="fa fa-cogs" style="color:white;"></i></a>
-    </div>
-  </div>
 
   <div class="page-wrapper" role="main" aria-label="Settings page">
     <main>
-      <i class="fa-solid fa-gear header-gear" aria-hidden="true"></i>
       <h1 class="settings-title">Settings</h1>
 
       <div class="tabs-container" id="tabs-container">
@@ -178,46 +182,27 @@
         <button class="tab-button" id="other-tab">Other</button>
       </div>
 
-      <div class="quick-buttons" aria-hidden="false">
-        <button class="quick-btn account" id="quick-account">Account</button>
-        <button class="quick-btn appearance" id="quick-appearance">Appearance</button>
-      </div>
+     
 
       <!-- Appearance tab -->
+      
+
+        
+
+    
+        
+
+            
       <div data-tab-name="style" class="tab">
         <div class="card settings-card">
-          <h2 style="margin:0 0 6px 0">Themes</h2>
-          <p class="themes-desc">Choose a site theme (from themes.css).</p>
-
-          <div class="themes-box" id="themes-box" aria-label="Themes box">
-            <div class="themes-title">Themes</div>
-            <div class="themes-desc">Pick a theme below.</div>
-
-            <div style="margin-top:12px;">
-              <div class="dropdown" id="theme-dropdown">
-                <button class="dropdown-btn" id="dropdown-toggle">Select Theme ▾</button>
-                <div class="dropdown-menu" id="dropdown-menu" hidden aria-hidden="true">
-                  <div class="dropdown-item" data-theme="halloween">Halloween</div>
-                  <div class="dropdown-item" data-theme="christmas">Christmas</div>
-                  <div class="dropdown-item" data-theme="v6">V6</div>
-                  <div class="dropdown-item" data-theme="">Default</div>
-                </div>
+          <h1>Theme</h1>
+          <div class="settings-item">
+            <label for="theme-select">Select Theme:</label>
+            <select id="theme-select" class="input">
+              <option value="">Coming Soon!</option>
+            </select>
               </div>
             </div>
-
-            <div style="margin-top:18px;">
-              <div class="settings-item">
-                <label for="theme-select">Or select (from themes.css)</label>
-                <select id="theme-select" class="input" aria-label="Theme select">
-                  <option value="default">Default</option>
-                  <option value="v6">V6</option>
-                  <option value="halloween">Halloween</option>
-                  <option value="christmas">Christmas</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Proxy / Cloak / Other tabs -->
@@ -235,37 +220,11 @@
     </main>
   </div>
 
+  <script src="/assets/js/theme.js"></script>
   <script>
     (function(){
-      const STORAGE_KEY = 'site-theme';
+      const STORAGE_KEY = 'theme';
       const select = document.getElementById('theme-select');
-      const dropdownToggle = document.getElementById('dropdown-toggle');
-      const dropdownMenu = document.getElementById('dropdown-menu');
-
-      // list of CSS variables to copy from body[theme] into :root so "every color" updates
-      const THEME_VARS = [
-        '--primary-color','--secondary-color','--accent-color',
-        '--bg-2-color','--bg-color','--text-color','--text-secondary-color',
-        '--text-placeholder-color','--border-color','--border-radius',
-        '--blob-1','--blob-2','--blob-3'
-      ];
-
-      // copy computed theme variables from body into :root (documentElement)
-      function syncThemeVarsToRoot() {
-        // short delay to let CSS cascade after changing attribute
-        requestAnimationFrame(() => {
-          const computed = getComputedStyle(document.body);
-          THEME_VARS.forEach(name => {
-            const val = (computed.getPropertyValue(name) || '').trim();
-            if (val) {
-              document.documentElement.style.setProperty(name, val);
-            } else {
-              // if not present on body, remove any inline override on :root
-              document.documentElement.style.removeProperty(name);
-            }
-          });
-        });
-      }
 
       function setTheme(value){
         if(!value || value === 'default'){
@@ -275,11 +234,6 @@
           document.body.setAttribute('theme', value);
           try{ localStorage.setItem(STORAGE_KEY, value); }catch{}
         }
-        // copy variables so everything using CSS vars updates instantly
-+        syncThemeVarsToRoot();
-        // update labels
-        const label = value && value !== 'default' ? value.charAt(0).toUpperCase() + value.slice(1) : 'Default';
-        dropdownToggle.textContent = label + ' ▾';
         if(select) select.value = value === 'default' ? 'default' : value;
       }
 
@@ -287,44 +241,13 @@
       try{
         const saved = localStorage.getItem(STORAGE_KEY) || 'default';
         if(saved && saved !== 'default') document.body.setAttribute('theme', saved);
-+        // ensure root vars reflect initial theme
-+        syncThemeVarsToRoot();
         if(select) select.value = saved;
-        dropdownToggle.textContent = (saved && saved !== 'default') ? (saved.charAt(0).toUpperCase()+saved.slice(1)) + ' ▾' : 'Select Theme ▾';
       }catch(e){ /* ignore */ }
 
       // select change
       if(select){
         select.addEventListener('change', e => setTheme(e.target.value));
       }
-
-      // dropdown logic
-      dropdownToggle.addEventListener('click', e=>{
-        e.stopPropagation();
-        const hidden = dropdownMenu.hasAttribute('hidden');
-        if(hidden){ dropdownMenu.removeAttribute('hidden'); dropdownMenu.setAttribute('aria-hidden','false'); }
-        else { dropdownMenu.setAttribute('hidden',''); dropdownMenu.setAttribute('aria-hidden','true'); }
-      });
-      document.addEventListener('click', ()=> {
-        if(!dropdownMenu.hasAttribute('hidden')) { dropdownMenu.setAttribute('hidden',''); dropdownMenu.setAttribute('aria-hidden','true'); }
-      });
-      dropdownMenu.querySelectorAll('.dropdown-item').forEach(item=>{
-        item.addEventListener('click', ()=>{
-          const theme = item.getAttribute('data-theme') || '';
-          setTheme(theme || 'default');
-          dropdownMenu.setAttribute('hidden','');
-          dropdownMenu.setAttribute('aria-hidden','true');
-        });
-      });
-
-      // quick buttons
-      document.getElementById('quick-appearance').addEventListener('click', ()=> {
-        // focus themes box
-        document.getElementById('themes-box').scrollIntoView({behavior:'smooth', block:'center'});
-      });
-      document.getElementById('quick-account').addEventListener('click', ()=> {
-        alert('Open account settings');
-      });
 
       // tabs logic
       const tabButtons = document.querySelectorAll('.tab-button');

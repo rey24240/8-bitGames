@@ -46,7 +46,7 @@ h6 {
   transition: 0.2s;
   transition: 0.3s;
   text-align: center;
-  border: 2px solid whitesmoke;
+  border: 2px solid var(--secondary-color);
   margin-bottom: 20px;
 }
 
@@ -65,7 +65,7 @@ h6 {
     width: 200px;
   padding: 1vw;
     font-size: 16px;
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius);
     background: var(--bg-2-color);
     color: var(--text-color);
@@ -93,8 +93,8 @@ h6 {
   border-radius: 3px color var(--bg-2-color);
   background: var(--bg-2-color);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  border: 2px solid white;
-   border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+   border-radius: 5px;
   transition: all 0.35s ease;
 }
 .game:hover img {

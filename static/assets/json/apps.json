@@ -2,7 +2,7 @@
     {
       "name": "Netflix",
       "url": "https://www.netflix.com",
-      "image": "/img/apps/Netflix.jpg"
+      "image": "/img/apps/netflix.jpeg"
     },
     {
       "name": "x",
@@ -12,36 +12,31 @@
     {
       "name": "Geforce NOW ",
       "url": "https://play.geforcenow.com/mall/",
-      "image": "/img/apps/geforce now.webp"
+      "image": "/img/apps/geforce now.png"
     },
     {
       "name": "Discord",
       "url": "https://discord.com/app",
-      "image": "/img/apps/Discord.png"
+      "image": "/img/apps/discord.png"
     },
     {
       "name": "Xbox Cloud Gaming",
       "url": "https://www.xbox.com/en-us/play",
-      "image": "/img/apps/Xbox Cloud Gaming.png"
+      "image": "/img/apps/xbox cloud gaming.png"
     },
     {
       "name": "Crazy Games",
       "url": "https://www.crazygames.com/",
-      "image": "/img/apps/crazygames.avif"
+      "image": "/img/apps/Crazygames.jpg"
     },
     {
       "name": "Spotify",
       "url": "https://spotify.com/",
-      "image": "/img/apps/spotify.jpg"
-    },
-    {
-      "name": "UBSoftware",
-      "url": "https://www.ubisoft.com/en-us/",
-      "image": "/img/apps/ubisoft.png"
+      "image": "/img/apps/Spotify.png"
     },
     {
       "name": "TikTok",
       "url": "https://www.tiktok.com/en/",
-      "image": "/img/apps/tiktok.png"
+      "image": "/img/apps/Tiktok.png"
     }
   ]

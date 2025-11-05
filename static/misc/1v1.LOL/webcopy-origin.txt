@@ -6,7 +6,7 @@ Uri: https://1v1.lol/favicon.png?v2
 File Name: C:\Downloaded Web Sites\1v1.lol\favicon.png
 Content Type: image/png
 
-Uri: https://1v1.lol/css/style.css
+Uri: https://1v1.lol/assets/css/style.css
 File Name: C:\Downloaded Web Sites\1v1.lol\css\style.css
 Content Type: text/css
 

@@ -89,7 +89,7 @@ button:hover, .infobtn:hover {
   text-align: center;
   font-size: 24px;
   outline: none;
-  color: #e0e0e0;
+  color: var(--secondary-color);
   margin-bottom: 20px;
 }
 

@@ -15,7 +15,7 @@ function loadNewPage(url) {
     scope: "/assets/uv/service/",
   });
   if (!isUrl(url)) url = "https://www.google.com/?safe=active&ssui=on" + url;
-  else if (!(url.startsWith("https://") || url.startsWith("http://")))
+  else if (!(url.startsWith("https://") || url.startsWith("https://")))
     url = "https://" + url;
   let urlEncoded = __uv$config.encodeUrl(url);
   urlEncoded = "/assets/uv/service/" + urlEncoded;
