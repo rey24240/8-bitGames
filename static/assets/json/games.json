@@ -76,5 +76,29 @@
     "creator": "Semiwork Studios",
     "usesProxy": false,
     "categories": ["Action"]
+  },
+  {
+    "name": "Speed Stars",
+    "url": "/misc/play/Speed-Stars.html",
+    "image": "/img/games/speed-stars.jpeg",
+    "creator": "Luke Doukakis",
+    "usesProxy": false,
+    "categories": ["Racing"]
+  },
+   {
+    "name": "Buckshot Roulette",
+    "url": "/misc/play/buckshot-roulette.html",
+    "image": "/img/games/BuckShot Roulette.jfif",
+    "creator": "Mike Klubnika",
+    "usesProxy": false,
+    "categories": ["Scary","Shooting"]
+  },
+  {
+    "name": "Bendy",
+    "url": "/misc/play/buckshot-roulette.html",
+    "image": "/img/games/BuckShot Roulette.jfif",
+    "creator": "Mike Klubnika",
+    "usesProxy": false,
+    "categories": ["Scary","Shooting"]
   }
 ]
