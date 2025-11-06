@@ -70,14 +70,6 @@
     "categories": ["Action"]
   },
   {
-    "name": "R.E.P.O",
-    "url": "/misc/play/repo.html",
-    "image": "/img/games/R.E.P.O.jpeg",
-    "creator": "Semiwork Studios",
-    "usesProxy": false,
-    "categories": ["Action"]
-  },
-  {
     "name": "Speed Stars",
     "url": "/misc/play/Speed-Stars.html",
     "image": "/img/games/speed-stars.jpeg",
@@ -86,19 +78,35 @@
     "categories": ["Racing"]
   },
    {
-    "name": "Buckshot Roulette",
-    "url": "/misc/play/buckshot-roulette.html",
-    "image": "/img/games/BuckShot Roulette.jfif",
-    "creator": "Mike Klubnika",
+    "name": "JetPack JoyRide",
+    "url": "https://abinbins.github.io/a7/jetpack-joyride",
+    "image": "/img/games/jetpack.jpeg",
+    "creator": "Halfbrick Studios",
+    "usesProxy": true,
+    "categories": ["Action","Shooting"]
+  },
+   {
+    "name": "Retro Bowl",
+    "url": "/misc/play/retro-bowl.html",
+    "image": "/img/games/Retro-bowl.png",
+    "creator": "",
     "usesProxy": false,
-    "categories": ["Scary","Shooting"]
+    "categories": ["Sports"]
   },
   {
-    "name": "Bendy",
-    "url": "/misc/play/buckshot-roulette.html",
-    "image": "/img/games/BuckShot Roulette.jfif",
-    "creator": "Mike Klubnika",
+    "name": "Crossy Road",
+    "url": "/misc/play/crossy.html",
+    "image": "/img/games/crossy road.jpg",
+    "creator": "",
     "usesProxy": false,
-    "categories": ["Scary","Shooting"]
+    "categories": ["io","Strategy"]
+  },
+   {
+    "name": "R.E.P.O",
+    "url": "/misc/play/repo.html",
+    "image": "/img/games/R.E.P.O.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Multiplayer"]
   }
 ]
