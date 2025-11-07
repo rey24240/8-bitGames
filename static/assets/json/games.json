@@ -148,6 +148,30 @@
     "creator": "Freeplay Inc",
     "usesProxy": true,
     "categories": ["Tycoon"]
+  },
+  {
+    "name": "Gladihoppers",
+    "url": "/misc/play/gladihoppers.html",
+    "image": "/img/games/gladihoppers.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Action"]
+  },
+   {
+    "name": "BuckShot Roulette",
+    "url": "/misc/play/buckshot-roulette.html",
+    "image": "/img/games/BuckShot Roulette.jfif",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Horror"]
+  },
+  {
+    "name": "Geometry Dash Lite",
+    "url": "/misc/play/geomerty dash lite.html",
+    "image": "/img/games/geometry-dash-lite.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy"]
   }
   
 ]

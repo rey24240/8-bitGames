@@ -85,6 +85,13 @@
                 }
                 setStatusMode('notice');
                 initializing = false;
+                // Add a reload button for user to try again
+                const reloadBtn = document.createElement('button');
+                reloadBtn.innerText = 'Reload Game';
+                reloadBtn.style.cssText = 'margin-top: 10px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;';
+                reloadBtn.onclick = () => window.location.reload();
+                statusNotice.appendChild(document.createElement('br'));
+                statusNotice.appendChild(reloadBtn);
             }
             const missing = Engine.getMissingFeatures({
                 threads: GODOT_THREADS_ENABLED,
@@ -122,19 +129,23 @@
                 }
             } else {
                 setStatusMode('progress');
-                engine.startGame({
-                    'onProgress': function (current, total) {
-                        if (current > 0 && total > 0) {
-                            statusProgress.value = current;
-                            statusProgress.max = total;
-                        } else {
-                            statusProgress.removeAttribute('value');
-                            statusProgress.removeAttribute('max');
-                        }
-                    },
-                }).then(() => {
-                    setStatusMode('hidden');
-                }, displayFailureNotice);
+                try {
+                    engine.startGame({
+                        'onProgress': function (current, total) {
+                            if (current > 0 && total > 0) {
+                                statusProgress.value = current;
+                                statusProgress.max = total;
+                            } else {
+                                statusProgress.removeAttribute('value');
+                                statusProgress.removeAttribute('max');
+                            }
+                        },
+                    }).then(() => {
+                        setStatusMode('hidden');
+                    }, displayFailureNotice);
+                } catch (err) {
+                    displayFailureNotice(err);
+                }
             }
         };
         window.godotRunStart = run;

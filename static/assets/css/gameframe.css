@@ -178,3 +178,26 @@
   max-width: none;
   max-height: none;
 }
+
+#warning-box {
+  margin: auto;
+  margin-top: 1vw;
+  width: 72.5vw;
+  height: auto;
+  background-color: #353d49;
+  border-radius: 0.5vw;
+  outline: 0.2vw solid #ffffff26;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+}
+
+#warning-box p {
+  font-size: 20px;
+  color: #ff0000;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
