@@ -38,5 +38,10 @@
       "name": "TikTok",
       "url": "https://www.tiktok.com/en/",
       "image": "/img/apps/Tiktok.png"
+    },
+      {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/",
+      "image": "/img/apps/Instagram.jpeg"
     }
   ]

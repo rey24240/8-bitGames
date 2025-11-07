@@ -31,11 +31,11 @@
   },
   {
     "name": "Madalin Stunt Car 2",
-    "url": "/misc/madalin-stunt-car-2.html",
+    "url": "/misc/play/madstunt-cars.html",
     "image": "/img/games/madalin-stunt-car-2.jpeg",
     "creator": "",
     "usesProxy": false,
-    "categories": ["Racing", "Multiplayer"]
+    "categories": ["Racing","Multiplayer"]
   },
   {
     "name": "Bloxors",
@@ -102,11 +102,52 @@
     "categories": ["io","Strategy"]
   },
    {
-    "name": "R.E.P.O",
-    "url": "/misc/play/repo.html",
-    "image": "/img/games/R.E.P.O.jpeg",
+    "name": "Fears Of Fathom: Home Alone",
+    "url": "/misc/play/fears-of-fathom-home-alone.html",
+    "image": "/img/games/fears of fathom home alone.jpeg",
     "creator": "",
     "usesProxy": false,
-    "categories": ["Multiplayer"]
+    "categories": ["Horror"]
+  },
+    {
+    "name": "Monkey Mart",
+    "url": "/misc/play/MonkeyMart.html",
+    "image": "/img/games/monkey-mart.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Tycoon"]
+  },
+   {
+    "name": "Space Waves",
+    "url": "https://games.crazygames.com/en-Us/space-waves/index.html?isNewUser=true&skipPreollFirstSession=true&v=1.344",
+    "image": "/img/games/space-waves.jpeg",
+    "creator": "Spencer Whiteout",
+    "usesProxy": true,
+    "categories": ["Strategy"]
+  },
+  {
+    "name": "Bloxd.io",
+    "url": "https://bloxd.io/",
+    "image": "/img/games/bloxd.io.jpeg",
+    "creator": "Arthur Baker",
+    "usesProxy": true,
+    "categories": ["io","Multiplayer"]
+  },
+  {
+    "name": "Shell Shockers",
+    "url": "https://shellshock.io/",
+    "image": "/img/games/shell-shockers.jpeg",
+    "creator": "Blue Wizard Digital",
+    "usesProxy": true,
+    "categories": ["Shooting","Multiplayer"]
+  },
+  {
+    "name": "Stone Grass Simulator",
+    "url": "https://games.crazygames.com/en-US/stone-grass-mowing-simulator/index.html?isNewUser=false&v=1.344",
+    "image": "/img/games/stone grass farming simulator.jpeg",
+    "creator": "Freeplay Inc",
+    "usesProxy": true,
+    "categories": ["Tycoon"]
   }
+  
 ]
