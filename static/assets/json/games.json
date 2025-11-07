@@ -172,6 +172,14 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["Strategy"]
+  },
+   {
+    "name": "Baldi-Plus",
+    "url": "/misc/play/baldi-plus.html",
+    "image": "/img/games/baldi-plus.jpg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy","Horror"]
   }
   
 ]
