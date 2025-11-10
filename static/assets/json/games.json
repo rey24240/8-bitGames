@@ -180,6 +180,22 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["Strategy","Horror"]
+  },
+  {
+    "name": "Fish Orbit",
+    "url": "/misc/play/Fish-Orbit.html",
+    "image": "/img/games/Fish Orbit.jpg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Clicker"]
+  },
+   {
+    "name": "Basketball Stars",
+    "url": "/misc/play/basketball-stars.html",
+    "image": "/img/games/basketball-stars.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Sports","2 player"]
   }
   
 ]
