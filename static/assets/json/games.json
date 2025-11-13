@@ -244,6 +244,30 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["Strategy","Horror"]
+    },
+      {
+    "name": "Small World Cup",
+    "url": "https://gameinclassroom.github.io/small-world-cup/",
+    "image": "/img/games/Small World Cup.jpeg",
+    "creator": "Rujo Games",
+    "usesProxy": true,
+    "categories": ["Sports"]
+    },
+    {
+    "name": "Snow Rider 3d",
+    "url": "/misc/play/snowrider.html",
+    "image": "/img/games/snowrider3d.jfif",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy"]
+    },
+    {
+    "name": "Mini Caps: Bombs",
+    "url": "https://games.crazygames.com/en-US/mini-caps-bombs/index.html?v=1.345",
+    "image": "/img/games/Mini caps bombs.jfif",
+    "creator": "Stand By Games",
+    "usesProxy": true,
+    "categories": ["Strategy","2 player"]
     }
   
 ]
