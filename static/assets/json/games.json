@@ -183,10 +183,10 @@
   },
   {
     "name": "Fish Orbit",
-    "url": "/misc/play/Fish-Orbit.html",
+    "url": "/misc/play/https://games.crazygames.com/en-US/fish-orbit/index.html?skipPrerollFirstSession=true&=1.345",
     "image": "/img/games/Fish Orbit.jpg",
     "creator": "",
-    "usesProxy": false,
+    "usesProxy": true,
     "categories": ["Clicker"]
   },
    {
@@ -196,6 +196,54 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["Sports","2 player"]
-  }
+  },
+   {
+    "name": "Learn to Fly",
+    "url": "/misc/play/learn-to-fly.html",
+    "image": "/img/games/learn-to-fly.jpeg",
+    "creator": "Light Bringer",
+    "usesProxy": false,
+    "categories": ["Action"]
+  },
+    {
+    "name": "Drunken Boxing",
+    "url": "https://games.crazygames.com/en-US/drunken-boxers/index.html?v=1.345",
+    "image": "/img/games/drunken boxing.jpeg",
+    "creator": "RHM Interactive",
+    "usesProxy": true,
+    "categories": ["2 player"]
+  },
+    {
+    "name": "Ragdoll Soccer 2 Players",
+    "url": "https://games.crazygames.com/en-US/ragdoll-soccer-2-players/index.html?v=1.345",
+    "image": "/img/games/Ragdoll-Soccer-2-Players.jpeg",
+    "creator": "X7 GAMES",
+    "usesProxy": true,
+    "categories": ["2 player","Sports"]
+  },
+    {
+    "name": "Crazy Cattle 3D",
+    "url": "/misc/play/crazycattle.html",
+    "image": "/img/games/crazy cattle 3d.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy"]
+    },
+     {
+    "name": "Flappy Bird",
+    "url": "/misc/play/flappybird.html",
+    "image": "/img/games/crazy cattle 3d.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy","Clicker"]
+    },
+     {
+    "name": "FNAF",
+    "url": "/misc/play/fnaf.html",
+    "image": "/img/games/fnaf.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Strategy","Horror"]
+    }
   
 ]
