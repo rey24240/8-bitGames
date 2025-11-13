@@ -183,9 +183,9 @@
   },
   {
     "name": "Fish Orbit",
-    "url": "/misc/play/https://games.crazygames.com/en-US/fish-orbit/index.html?skipPrerollFirstSession=true&=1.345",
+    "url": "https://games.crazygames.com/en-US/fish-orbit/index.html?skipPrerollFirstSession=true&=1.345",
     "image": "/img/games/Fish Orbit.jpg",
-    "creator": "",
+    "creator": "idk",
     "usesProxy": true,
     "categories": ["Clicker"]
   },

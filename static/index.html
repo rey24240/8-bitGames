@@ -186,6 +186,29 @@
             background-color: var(--secondary-color);
           }
         </style>
+
+        <style>
+          #visitor-counter {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--secondary-color);
+            font-size: 60px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+          }
+          #visitor-counter a {
+            color: var(--secondary-color);
+            text-decoration: none;
+          }
+          #visitor-counter a:hover {
+            color: var(--primary-color);
+          }
+        </style>
         </head>
         <body>
     
@@ -194,8 +217,9 @@
           <div id="popupContent">
             <span id="closeButton">&times;</span>
             <h2>Welcome Back</h2>
-            <h1>Added the Requested games</h1>
-            <p></p>
+            <h1>Fixed Fish Orbit
+            </h1>
+            <p>Added A vistor Counter</p>
               
            
             <p></p>
@@ -246,5 +270,10 @@
   <script src='/announcement.js'></script>
   <script src="assets/js/particles.js"></script>
   <script src="/assets/js/shuffler.js"></script>
+
+  <div id="visitor-counter">
+    <a href='https://www.free-counters.org/'>https://www.Free-Counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=f70eefbbb72a4aebfaf685c026f5620525ec4393'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1439831/t/5"></script>
+  </div>
 </body>
  
