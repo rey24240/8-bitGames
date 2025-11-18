@@ -268,6 +268,22 @@
     "creator": "Stand By Games",
     "usesProxy": true,
     "categories": ["Strategy","2 player"]
+    },
+    {
+    "name": "Puppet Fighter 2 Player",
+    "url": "https://games.crazygames.com/en-US/puppet-fighter-2-player/index.html?v=1.345",
+    "image": "/img/games/puppet-fighter-2-player.jpeg",
+    "creator": "Stand By Games",
+    "usesProxy": true,
+    "categories": ["2 player"]
+    },
+     {
+    "name": "Rooftop Snipers",
+    "url": "/misc/play/rooftop-snipers.html",
+    "image": "/img/games/Rooftop snipers.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["2 player"]
     }
   
 ]
