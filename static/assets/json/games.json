@@ -284,6 +284,30 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["2 player"]
+    },
+     {
+    "name": "Golf Orbit",
+    "url": "https://games.crazygames.com/en-US/golf-orbit/index.html?skipPrerollFirstSession=true&v=1.345",
+    "image": "/img/games/golf orbit.jpeg",
+    "creator": "TapNation",
+    "usesProxy": true,
+    "categories": ["Clicker"]
+    },
+     {
+    "name": "Basketball Orbit",
+    "url": "https://games.crazygames.com/en-US/basketball-orbit/index.html?skipPrerollFirstSession=true&v=1.345",
+    "image": "/img/games/basketball orbit.jpeg",
+    "creator": "idk",
+    "usesProxy": true,
+    "categories": ["Clicker"]
+    },
+    {
+    "name": "Plinko Clicker",
+    "url": "https://games.crazygames.com/en-US/plinko-clicker-hdl/index.html?v=1.345",
+    "image": "/img/games/Plinko Clicker.jpeg",
+    "creator": "Pipoza Games",
+    "usesProxy": true,
+    "categories": ["Clicker"]
     }
   
 ]
