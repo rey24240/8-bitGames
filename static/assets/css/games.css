@@ -87,14 +87,15 @@ h6 {
     justify-content: center;
 }
 .game img {
-   width: 175px;
+   width: 180px;
     height: 175px;
+    gap: 8px;
   object-fit: cover;
   border-radius: 3px color var(--bg-2-color);
   background: var(--bg-2-color);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  border: 5px solid var(--secondary-color);
-   border-radius: 5px;
+  border: 3px solid black;
+   border-radius: 10px;
   transition: all 0.35s ease;
 }
 .game:hover img {

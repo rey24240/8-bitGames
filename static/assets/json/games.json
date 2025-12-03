@@ -33,7 +33,7 @@
     "name": "Madalin Stunt Car 2",
     "url": "/misc/play/madstunt-cars.html",
     "image": "/img/games/madalin-stunt-car-2.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Racing","Multiplayer"]
   },
@@ -41,7 +41,7 @@
     "name": "Bloxors",
     "url": "/misc/play/bloxors.html",
     "image": "/img/games/bloxorz.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy"]
   },
@@ -89,7 +89,7 @@
     "name": "Retro Bowl",
     "url": "/misc/play/retro-bowl.html",
     "image": "/img/games/Retro-bowl.png",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Sports"]
   },
@@ -97,7 +97,7 @@
     "name": "Crossy Road",
     "url": "/misc/play/crossy.html",
     "image": "/img/games/crossy road.jpg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["io","Strategy"]
   },
@@ -105,7 +105,7 @@
     "name": "Fears Of Fathom: Home Alone",
     "url": "/misc/play/fears-of-fathom-home-alone.html",
     "image": "/img/games/fears of fathom home alone.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Horror"]
   },
@@ -113,7 +113,7 @@
     "name": "Monkey Mart",
     "url": "/misc/play/MonkeyMart.html",
     "image": "/img/games/monkey-mart.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Tycoon"]
   },
@@ -153,7 +153,7 @@
     "name": "Gladihoppers",
     "url": "/misc/play/gladihoppers.html",
     "image": "/img/games/gladihoppers.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Action"]
   },
@@ -161,7 +161,7 @@
     "name": "BuckShot Roulette",
     "url": "/misc/play/buckshot-roulette.html",
     "image": "/img/games/BuckShot Roulette.jfif",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Horror"]
   },
@@ -169,7 +169,7 @@
     "name": "Geometry Dash Lite",
     "url": "/misc/play/geomerty dash lite.html",
     "image": "/img/games/geometry-dash-lite.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy"]
   },
@@ -177,7 +177,7 @@
     "name": "Baldi-Plus",
     "url": "/misc/play/baldi-plus.html",
     "image": "/img/games/baldi-plus.jpg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy","Horror"]
   },
@@ -185,7 +185,7 @@
     "name": "Fish Orbit",
     "url": "https://games.crazygames.com/en-US/fish-orbit/index.html?skipPrerollFirstSession=true&=1.345",
     "image": "/img/games/Fish Orbit.jpg",
-    "creator": "idk",
+    "creator": "Unknown",
     "usesProxy": true,
     "categories": ["Clicker"]
   },
@@ -193,7 +193,7 @@
     "name": "Basketball Stars",
     "url": "/misc/play/basketball-stars.html",
     "image": "/img/games/basketball-stars.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Sports","2 player"]
   },
@@ -225,7 +225,7 @@
     "name": "Crazy Cattle 3D",
     "url": "/misc/play/crazycattle.html",
     "image": "/img/games/crazy cattle 3d.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy"]
     },
@@ -233,7 +233,7 @@
     "name": "Flappy Bird",
     "url": "/misc/play/flappybird.html",
     "image": "/img/games/flappy bird.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy","Clicker"]
     },
@@ -241,7 +241,7 @@
     "name": "FNAF",
     "url": "/misc/play/fnaf.html",
     "image": "/img/games/fnaf.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy","Horror"]
     },
@@ -257,7 +257,7 @@
     "name": "Snow Rider 3d",
     "url": "/misc/play/snowrider.html",
     "image": "/img/games/snowrider3d.jfif",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Strategy"]
     },
@@ -281,7 +281,7 @@
     "name": "Rooftop Snipers",
     "url": "/misc/play/rooftop-snipers.html",
     "image": "/img/games/Rooftop snipers.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["2 player"]
     },
@@ -297,7 +297,7 @@
     "name": "Basketball Orbit",
     "url": "https://games.crazygames.com/en-US/basketball-orbit/index.html?skipPrerollFirstSession=true&v=1.345",
     "image": "/img/games/basketball orbit.jpeg",
-    "creator": "idk",
+    "creator": "Unknown",
     "usesProxy": true,
     "categories": ["Clicker"]
     },
@@ -305,7 +305,7 @@
     "name": "Plinko Clicker",
     "url": "https://games.crazygames.com/en-US/plinko-clicker-hdl/index.html?v=1.345",
     "image": "/img/games/Plinko Clicker.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["Clicker"]
     },
@@ -313,7 +313,7 @@
     "name": "Tag",
     "url": "/misc/play/tag.html",
     "image": "/img/games/Tag.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["2 player"]
     },
@@ -321,7 +321,7 @@
     "name": "Tag 2",
     "url": "/misc/play/tag-2.html",
     "image": "/img/games/Tag 2.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["2 player"]
     },
@@ -329,7 +329,7 @@
     "name": "Soccer Random",
     "url": "/misc/play/soccer-random.html",
     "image": "/img/games/Soccer Random.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["2 player", "Sports"]
     },
@@ -337,7 +337,7 @@
     "name": "Basket Random",
     "url": "/misc/play/basket-random.html",
     "image": "/img/games/Basket Random.jpeg",
-    "creator": "",
+    "creator": "Unknown",
     "usesProxy": false,
     "categories": ["2 player", "Sports"]
     },
@@ -345,8 +345,25 @@
     "name": "Granny 3",
     "url": "/misc/play/granny-3.html",
     "image": "/img/games/granny-3.jpeg",
+    "creator": "Unknown",
+    "usesProxy": false,
+    "categories": ["Horror"]
+    },
+    {
+    "name": "Clash of Vikings",
+    "url": "/misc/play/clash-of-vikings.html",
+    "image": "/img/games/Clash of Vikings.webp",
+    "creator": "Unknown",
+    "usesProxy": false,
+    "categories": ["Action"]
+    },
+    {
+    "name": "Bad Parenting",
+    "url": "/misc/play/bad-parenting.html",
+    "image": "/img/games/bad parenting.jfif",
     "creator": "",
     "usesProxy": false,
     "categories": ["Horror"]
     }
 ]
+
