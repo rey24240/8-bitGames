@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <script src="/assets/js/font.js"></script>
+    <meta name="google" content="notranslate" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=1" />
+    <title>Google Classroom</title>
+    <link rel="stylesheet" href="/assets/css/gameframe.css?v=3" />
+    <script src="/assets/js/script.js?v=11"></script>
+    <!-- Sidebar assets (copied from site index) -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/particle.css" />
+    <link rel="stylesheet" href="/assets/css/theme.css" />
+  <script src="/assets/js/theme.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+-<body>
+
+    <div class="sidebar">
+        <!-- Logo at the top of the sidebar with link -->
+        <a href="/index.html" class="logo-link">
+        <img class="logo" src="img/images.png">
+        </a>
+        
+        <!-- Divider line -->
+        <div class="divider"></div>
+
+        <!-- Navigation items -->
+        <div class="nav-item selected"><a href="/index.html"><i class="fa fa-home" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/apps.html"><i class="fa fa-layer-group" style="color:var(--text-color);"></i></a></div> <!-- Account icon -->
+        <div class="nav-item"><a href="/games.html"><i class="fa fa-gamepad" style="color:var(--text-color);"></i></a></div> <!-- Joy-Con icon -->
+        
+        <!-- Divider line before About and Settings -->
+        <div class="divider"></div>
+
+        <!-- New "About" and "Settings" buttons at the bottom -->
+        <div class="nav-item"><a href="/aboutpage.html"><i class="fa fa-circle-info" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/settings.html"><i class="fa fa-cogs" style="color:var(--text-color);"></i></a></div>
+    </div>
+    
+    
+
+        <div theme="v6">
+            <div id="blobs">
+                <div class="gradiant"></div>
+                <div class="gradiant2"></div>
+                <div class="gradiant3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End sidebar -->
+
+    <div id="gameframe">
+        <div class="gameDisplay">
+            <div class="game">
+                <iframe id="iframe" src="/misc/soccer-random/"></iframe>
+            </div>
+            <div class="options">
+                <div class="left">
+                    <div class="gametext">
+                        <img src="/img/games/Soccer Random.jpeg" class="gameicon" />
+                        <div class="margin">
+                            <div class="flex">
+                                <h1 class="titletext">Soccer Random</h1>
+                            </div>
+                            <span class="bytext">Julien Thiennon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-rotate-right reloadbtn" id="reloadbtn"></i>
+                    <i class="fa-solid fa-expand fullscreenbtn" onclick="fullscreen();"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var elem = document.getElementById("iframe");
+
+        function fullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+        function reload() {
+            document.getElementById("iframe").src += "";
+        }
+        reloadbtn.onclick = reload;
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                // Reset iframe styles when exiting fullscreen to fix bug
+                elem.style.width = '';
+                elem.style.height = '';
+                elem.style.position = '';
+                elem.style.top = '';
+                elem.style.left = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

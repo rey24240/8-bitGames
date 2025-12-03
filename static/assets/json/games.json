@@ -305,9 +305,48 @@
     "name": "Plinko Clicker",
     "url": "https://games.crazygames.com/en-US/plinko-clicker-hdl/index.html?v=1.345",
     "image": "/img/games/Plinko Clicker.jpeg",
-    "creator": "Pipoza Games",
-    "usesProxy": true,
+    "creator": "",
+    "usesProxy": false,
     "categories": ["Clicker"]
+    },
+    {
+    "name": "Tag",
+    "url": "/misc/play/tag.html",
+    "image": "/img/games/Tag.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["2 player"]
+    },
+    {
+    "name": "Tag 2",
+    "url": "/misc/play/tag-2.html",
+    "image": "/img/games/Tag 2.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["2 player"]
+    },
+    {
+    "name": "Soccer Random",
+    "url": "/misc/play/soccer-random.html",
+    "image": "/img/games/Soccer Random.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["2 player", "Sports"]
+    },
+    {
+    "name": "Basket Random",
+    "url": "/misc/play/basket-random.html",
+    "image": "/img/games/Basket Random.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["2 player", "Sports"]
+    },
+    {
+    "name": "Granny 3",
+    "url": "/misc/play/granny-3.html",
+    "image": "/img/games/granny-3.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "categories": ["Horror"]
     }
-  
 ]
