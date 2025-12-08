@@ -10,15 +10,15 @@
 }
 
 :root {
-  --primary-color: #9282fb;
-  --secondary-color: #613367;
-  --accent-color: #b263a6;
-  --bg-2-color: #171527;
-  --bg-color: #090810;
-  --text-color: #e5e4f2;
-  --text-secondary-color: #b0b0b0;
+  --primary-color: #d4af37;
+  --secondary-color: #c9a227;
+  --accent-color: #997618;
+  --bg-2-color: #2d2417;
+  --bg-color: #1a1410;
+  --text-color: #f5e6d3;
+  --text-secondary-color: #b8a88a;
   --text-placeholder-color: #6c6c6c;
-  --border-color: #2c2c3f;
+  --border-color: #d4af37;
   --font-family: "Poppins", sans-serif;
   --font-size: 16px;
   --border-radius: 12px;

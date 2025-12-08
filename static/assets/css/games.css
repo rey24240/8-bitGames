@@ -38,7 +38,6 @@ h6 {
   width: 40%;
   border-radius: 16px;
   background: var(--bg-2-color);
-  color: #a259ff;
   box-shadow: 0 2px 8px var(--bg-border-color);
   font-size: 24px;
   border: 2px solid var(--bg-border-color);
@@ -87,46 +86,39 @@ h6 {
     justify-content: center;
 }
 .game img {
-   width: 180px;
-    height: 175px;
-    gap: 8px;
+  margin: 10px;
+  width: 190px;
+  height: 195px;
   object-fit: cover;
-  border-radius: 3px color var(--bg-2-color);
+  border-radius: 20px;
   background: var(--bg-2-color);
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  border: 3px solid black;
-   border-radius: 10px;
-  transition: all 0.35s ease;
+  
 }
 .game:hover img {
-  transform: scale(1.05);
+ transform: scale(1.05);
   cursor: pointer;
   background-color: var(--primary-color);
 
 }
 
+.badge {
+   background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 2px 6px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
 .text {
-  padding: 10px;
-  border-radius: 5px;
-    box-shadow: 0 0 15px 2px #a259ff;
-  background: linear-gradient(90deg, #000 0%, rgb(40, 0, 80) 100%);
+  background-color: transparent;
   font-family: "Roboto", serif;
   font-weight: 500;
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translate(-50%, 10%);
   color: white;
-  font-size: 0.75rem;
-  opacity: 0;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
   white-space: nowrap;
-  transition: opacity 0.35s ease, transform 0.35s ease;
-  animation: slide-out 0.35s ease forwards;
-}
-.game:hover .text {
-  opacity: 10;
-  animation: slide-in 0.35s ease forwards;
-  
 }
 
 @keyframes slide-in {

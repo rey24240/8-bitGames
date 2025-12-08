@@ -22,24 +22,19 @@ a, .form__input {
 
 #status-box, #clock, #fps-counter {
   background-color: var(--bg-2-color) !important;
-  color: white !important;
-  border: 2px solid #7c4dff;
+  color: var(--text-color) !important;
+  border: 2px solid var(--border-color);
   box-shadow: 0 2px 12px #232526;
 }
 
 
 /* Button styles */
 button, .infobtn {
-  background-color: var(--bg-2-color)
-   !important;
-  color: #fff !important;
-  border: 2px solid #7c4dff !important;
+background-color: var(--bg-2-color);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 2px 8px #232526;
-}
-button:hover, .infobtn:hover {
-  background: #7c4dff !important;
-  color: #fff !important;
 }
 
 /* Popup styles */
@@ -67,6 +62,36 @@ button:hover, .infobtn:hover {
   font-family: "Roboto", serif;
   text-align: center;
   padding-top: 2vh;
+  text-decoration: underline;
+  color: transparent;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: bounce 2s infinite, colorShift 3s infinite linear;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #small-title {
@@ -134,9 +159,9 @@ button:hover, .infobtn:hover {
 }
 
 .infobtn {
-  background-color: black;
-  color: white;
-  border: none;
+  background-color: var(--bg-2-color);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;

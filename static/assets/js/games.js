@@ -11,10 +11,20 @@ window.addEventListener("load", (event) => {
       .then((response) => response.json())
       .then((games) => {
         gamesArray = games; 
-        games.sort((a, b) => a.name.localeCompare(b.name));
+        games.sort((a, b) => {
+          // Special entries first
+          if (a.name.startsWith("[!!]")) return -1;
+          if (b.name.startsWith("[!!]")) return 1;
+          // Then games with badges
+          if (a.badge && !b.badge) return -1;
+          if (!a.badge && b.badge) return 1;
+          // Then alphabetical
+          return a.name.localeCompare(b.name);
+        });
         const totalImages = games.length;
 
         games.forEach(function (game, gameNum) {
+          let badgeHtml = game.badge ? `<span class="badge">${game.badge}</span>` : '';
           let gameHtml;
           if (game.usesProxy) {
             gameHtml = `<div class="game">
@@ -23,7 +33,7 @@ window.addEventListener("load", (event) => {
               }hire('${game.url}');">
                   <img loading="eager" src="${game.image}"
                        onload="handleImageLoad(${totalImages})">
-                  <p class="text">${game.name}</p>
+                  <p class="text">${game.name} ${badgeHtml}</p>
               </a>
             </div>`;
           } else {
@@ -33,7 +43,7 @@ window.addEventListener("load", (event) => {
             }>
                   <img loading="eager" src="${game.image}"
                        onload="handleImageLoad(${totalImages})">
-                  <p class="text">${game.name}</p>
+                  <p class="text">${game.name} ${badgeHtml}</p>
               </a>
             </div>`;
           }

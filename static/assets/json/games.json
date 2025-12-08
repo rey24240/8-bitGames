@@ -19,7 +19,8 @@
     "image": "/img/games/1v1.lol.jpeg",
     "creator": "JustPlay.LOL",
     "usesProxy": true,
-    "categories": ["Shooting", "2 player", "io", "Action"]
+    "categories": ["Shooting", "2 player", "io", "Action"],
+    "badge": "Popular ⭐"
   },
   {
     "name": "Smash Karts",
@@ -135,7 +136,7 @@
   },
   {
     "name": "Shell Shockers",
-    "url": "https://shellshock.io/",
+    "url": "https://shellshock.io",
     "image": "/img/games/shell-shockers.jpeg",
     "creator": "Blue Wizard Digital",
     "usesProxy": true,
@@ -288,7 +289,7 @@
      {
     "name": "Golf Orbit",
     "url": "https://games.crazygames.com/en-US/golf-orbit/index.html?skipPrerollFirstSession=true&v=1.345",
-    "image": "/img/games/golf orbit.jpeg",
+    "image": "/img/games/golf orbit.jfif",
     "creator": "TapNation",
     "usesProxy": true,
     "categories": ["Clicker"]
@@ -364,6 +365,33 @@
     "creator": "",
     "usesProxy": false,
     "categories": ["Horror"]
+    },
+     {
+    "name": "Kart Bros",
+    "url": "https://trafficroad.io/kart-bros.embed",
+    "image": "/img/games/kart-bros.jpeg",
+    "creator": "Blue Wizard Digital Inc",
+    "usesProxy": true,
+    "badge":"New 🔥",
+    "categories": ["Action","Racing"]
+    }, 
+    {
+    "name": "Hole.io",
+    "url": "https://kevin.games/hole/",
+    "image": "/img/games/hole-io.jpeg",
+    "creator": "VooDoo",
+    "usesProxy": true,
+    "badge": "New 🔥",
+    "categories": ["Strategy"]
+    },
+     {
+    "name": "jelly Mario",
+    "url": "https://jellymar.io/",
+    "image": "/img/games/jelly mario.jpg",
+    "creator": "Stefan Hedman",
+    "usesProxy": true,
+    "badge":"New 🔥",
+    "categories": ["Nintendo"]
     }
 ]
 
