@@ -372,7 +372,6 @@
     "image": "/img/games/kart-bros.jpeg",
     "creator": "Blue Wizard Digital Inc",
     "usesProxy": true,
-    "badge":"New 🔥",
     "categories": ["Action","Racing"]
     }, 
     {
@@ -381,7 +380,6 @@
     "image": "/img/games/hole-io.jpeg",
     "creator": "VooDoo",
     "usesProxy": true,
-    "badge": "New 🔥",
     "categories": ["Strategy"]
     },
      {
@@ -390,8 +388,43 @@
     "image": "/img/games/jelly mario.jpg",
     "creator": "Stefan Hedman",
     "usesProxy": true,
-    "badge":"New 🔥",
     "categories": ["Nintendo"]
+    },
+      {
+    "name": "Bow Masters",
+    "url": "/misc/play/0.html",
+    "image": "/img/games/bowmasters.jpeg",
+    "creator": "Playgendary",
+    "usesProxy": false,
+        "badge":"New 🔥",
+    "categories": ["Shooting", "Action"]
+    },
+       {
+    "name": "Bad Ice Cream",
+    "url": "https://7fb1fd45-24ce-4ade-b5c4-9ee55ec99526.poki-gdn.com/403f9f7f-52b0-4fa1-a4c2-c46883d239b6/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fwww.nitrome.com%2F&game_id=7fb1fd45-24ce-4ade-b5c4-9ee55ec99526&game_version_id=403f9f7f-52b0-4fa1-a4c2-c46883d239b6&inspector=0",
+    "image": "/img/games/Bad Ice Cream.jpeg",
+    "creator": "Nitrome",
+    "usesProxy": true,
+        "badge":"New 🔥",
+    "categories": ["Strategy"]
+    },
+     {
+    "name": "Bad Ice Cream 2",
+    "url": "https://f1a2e68b-413f-4ed0-896c-e14bd97e30c3.poki-gdn.com/6dd890f7-a0fc-4b3f-94b0-5a72a476d61f/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fwww.nitrome.com%2F&game_id=f1a2e68b-413f-4ed0-896c-e14bd97e30c3&game_version_id=6dd890f7-a0fc-4b3f-94b0-5a72a476d61f&inspector=0",
+    "image": "/img/games/Bad Ice Cream2.jpeg",
+    "creator": "Nitrome",
+    "usesProxy": true,
+        "badge":"New 🔥",
+    "categories": ["Strategy"]
+    },
+     {
+    "name": "Bad Ice Cream 3",
+     "url": "https://games.poki.com/458768/5b5f8af1-684b-4557-a71b-a865cf564b1d",
+    "image": "/img/games/Bad Ice Cream3.jpeg",
+    "creator": "Nitrome",
+    "usesProxy": true,
+        "badge":"New 🔥",
+    "categories": ["Strategy"]
     }
 ]
 

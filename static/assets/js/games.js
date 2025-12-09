@@ -10,7 +10,7 @@ window.addEventListener("load", (event) => {
     fetch("/assets/json/games.json")
       .then((response) => response.json())
       .then((games) => {
-        gamesArray = games; 
+        gamesArray = games;
         games.sort((a, b) => {
           // Special entries first
           if (a.name.startsWith("[!!]")) return -1;

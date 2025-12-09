@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/assets/js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=1" />
+    <title>Bloons Tower Defense 5</title>
+    <link rel="stylesheet" href="/assets/css/gameframe.css?v=3" />
+      <script src="/assets/js/font.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="/assets/css/theme.css" />
+  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/sidebar.css" />
+  <script src="/assets/js/script.js?v=14"></script>
+  <link href="/misc/papas/waflash.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+
+</head>
+
+<body>
+   <div class="sidebar">
+        <!-- Logo at the top of the sidebar with link -->
+        <a href="/index.html" class="logo-link">
+        <img class="logo" src="img/images.png">
+        </a>
+        
+        <!-- Divider line -->
+        <div class="divider"></div>
+
+        <!-- Navigation items -->
+        <div class="nav-item selected"><a href="/index.html"><i class="fa fa-home" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/apps.html"><i class="fa fa-layer-group" style="color:var(--text-color);"></i></a></div> <!-- Account icon -->
+        <div class="nav-item"><a href="/games.html"><i class="fa fa-gamepad" style="color:var(--text-color);"></i></a></div> <!-- Joy-Con icon -->
+        
+        <!-- Divider line before About and Settings -->
+        <div class="divider"></div>
+
+        <!-- New "About" and "Settings" buttons at the bottom -->
+        <div class="nav-item"><a href="/aboutpage.html"><i class="fa fa-circle-info" style="color:var(--text-color);"></i></a></div>
+        <div class="nav-item"><a href="/settings.html"><i class="fa fa-cogs" style="color:var(--text-color);"></i></a></div>
+    </div>
+    
+
+
+
+    <div id="gameframe">
+        <div class="gameDisplay">
+            <div class="game">
+                <script>
+                    var gameConfig = {
+                      swfUrl: "https://55gms.de/misc/bloonstd5/bloonstd5.swf",
+                    };
+                </script>
+                <div id="waflashContainer">
+                    <canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
+                    <div id="waflashStatus" style="display: none">Playing...</div>
+                    <script src="https://cdn.jsdelivr.net/gh/nate-games/waflash@main/main.js" crossorigin="anonymous" type="module"></script>
+                </div>
+            </div>
+            <div class="options">
+                <div class="left">
+                    <div class="gametext">
+                        <img src="/img/games/bloons-td-5.jpeg" class="gameicon" />
+                        <div class="margin">
+                            <div class="flex">
+                                <h1 class="titletext">Bloons TD 5</h1>
+                            </div>
+                            <span class="bytext">Ninja Kiwi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-rotate-right reloadbtn" id="reloadbtn"></i>
+                    <i class="fa-solid fa-expand fullscreenbtn" onclick="fullscreen();"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var elem = document.getElementById("canvas");
+
+        function fullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+        function reload() {
+            location.reload();
+        }
+        reloadbtn.onclick = reload;
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                // Reset canvas styles when exiting fullscreen to fix bug
+                elem.style.width = '';
+                elem.style.height = '';
+                elem.style.position = '';
+                elem.style.top = '';
+                elem.style.left = '';
+            }
+        });
+    </script>
+</body>
+
+</html>
