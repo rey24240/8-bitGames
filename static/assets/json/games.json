@@ -396,7 +396,7 @@
     "image": "/img/games/bowmasters.jpeg",
     "creator": "Playgendary",
     "usesProxy": false,
-        "badge":"New 🔥",
+        "badge":"New 💥",
     "categories": ["Shooting", "Action"]
     },
        {
@@ -405,7 +405,7 @@
     "image": "/img/games/Bad Ice Cream.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 🔥",
+        "badge":"New 💥",
     "categories": ["Strategy"]
     },
      {
@@ -414,7 +414,7 @@
     "image": "/img/games/Bad Ice Cream2.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 🔥",
+        "badge":"New 💥",
     "categories": ["Strategy"]
     },
      {
@@ -423,7 +423,7 @@
     "image": "/img/games/Bad Ice Cream3.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 🔥",
+        "badge":"New 💥",
     "categories": ["Strategy"]
     }
 ]
