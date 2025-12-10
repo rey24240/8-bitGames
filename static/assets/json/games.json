@@ -396,7 +396,6 @@
     "image": "/img/games/bowmasters.jpeg",
     "creator": "Playgendary",
     "usesProxy": false,
-        "badge":"New 💥",
     "categories": ["Shooting", "Action"]
     },
        {
@@ -405,7 +404,6 @@
     "image": "/img/games/Bad Ice Cream.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 💥",
     "categories": ["Strategy"]
     },
      {
@@ -414,7 +412,6 @@
     "image": "/img/games/Bad Ice Cream2.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 💥",
     "categories": ["Strategy"]
     },
      {
@@ -423,8 +420,16 @@
     "image": "/img/games/Bad Ice Cream3.jpeg",
     "creator": "Nitrome",
     "usesProxy": true,
-        "badge":"New 💥",
     "categories": ["Strategy"]
+    },
+    {
+    "name": "Hill Climb Racing Lite",
+     "url": "/misc/play/hill-climb-racing-lite.html",
+    "image": "/img/games/hill-climb-racing-lite.jpeg",
+    "creator": "",
+    "usesProxy": false,
+    "badge":"New 💥",
+    "categories": ["Strategy", "racing"]
     }
 ]
 
