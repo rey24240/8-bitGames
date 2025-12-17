@@ -415,21 +415,58 @@
     "categories": ["Strategy"]
     },
      {
-    "name": "Bad Ice Cream 3",
-     "url": "https://games.poki.com/458768/5b5f8af1-684b-4557-a71b-a865cf564b1d",
-    "image": "/img/games/Bad Ice Cream3.jpeg",
-    "creator": "Nitrome",
+    "name": "The impossible Quiz",
+     "url": "https://htmlxm.github.io/h8/the-impossible-quiz",
+    "image": "/img/games/the-impossible-quiz.png",
+    "creator": "Splapp-me-do",
     "usesProxy": true,
+    "badge": "New! 🆕",
     "categories": ["Strategy"]
     },
-    {
-    "name": "Hill Climb Racing Lite",
-     "url": "/misc/hill-climb-racing-lite",
-    "image": "/img/games/hill-climb-racing-lite.jpeg",
-    "creator": "",
-    "usesProxy": false,
-    "badge":"New 💥",
-    "categories": ["Strategy", "racing"]
+     {
+    "name": "Sausage Flip",
+     "url": "https://htmlxm.github.io/h6/sausage-flip",
+    "image": "/img/games/sausage-flip.jpeg",
+    "creator": "Madbox",
+    "usesProxy": true,
+    "badge": "New! 🆕",
+    "categories": ["Strategy"]
+    },
+     {
+    "name": "BitLife",
+     "url": "https://htmlxm.github.io/h/bitlife",
+    "image": "/img/games/bitlife.png",
+    "creator": "Candywriter,LLC",
+    "badge": "New! 🆕",
+    "categories": [],
+    "usesProxy": true
+    },
+     {
+    "name": "Boxing Physics 2",
+     "url": "https://htmlxm.github.io/h2/boxing-physics-2",
+    "image": "/img/games/boxing-physics-2.jpeg",
+    "creator": "Cool Bears LLC",
+    "badge": "New! 🆕",
+    "categories": [],
+    "usesProxy": true
+    },
+     {
+    "name": "ultraKill",
+     "url": "/misc/play/ultrakill.html",
+    "image": "/img/games/ultrakill.jfif",
+    "creator": "Bread",
+    "badge": "New! 🆕",
+    "categories": [],
+    "usesProxy": false
+    },
+     {
+    "name": "R.E.P.O",
+     "url": "/misc/play/repo.html",
+    "image": "/img/games/repo.jfif",
+    "creator": "98Corbins",
+    "badge": "New! 🆕",
+    "categories": [],
+    "usesProxy": false
     }
 ]
 

@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
@@ -5,9 +6,29 @@
   margin: 0;
 }
 
+
 body {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
   color: #f5f5f5;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-2-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 6px;
+  border: 2px solid var(--bg-2-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
 
 body,
@@ -20,94 +41,112 @@ h6 {
   font-family: "Roboto", serif;
   text-align: center;
   font-weight: 400;
-
 }
 
 
 
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
 
 .searchbar {
   padding: 1vw;
-  width: 40%;
+  width: 50%;
+  min-width: 400px;
   border-radius: 16px;
   background: var(--bg-2-color);
   box-shadow: 0 2px 8px var(--bg-border-color);
   font-size: 24px;
-  border: 2px solid var(--bg-border-color);
+  border: 2px solid var(--secondary-color);
   outline: none;
-  transition: 0.2s;
   transition: 0.3s;
   text-align: center;
+  margin-left: 50px; /* Account for sidebar */
+}
+
+
+#category-selector {
+  width: 200px;
+  padding: 1vw;
+  font-size: 16px;
   border: 2px solid var(--secondary-color);
-  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  background: var(--bg-2-color);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for dropdown */
+#category-selector option {
+  background: var(--bg-2-color);
+  color: var(--text-color);
+  padding: 8px;
+}
+
+#category-selector::-webkit-scrollbar {
+  width: 8px;
+}
+
+#category-selector::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+#category-selector::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+#category-selector::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
 
 .searchbar::placeholder {
-   color: var(--text-color);
+  color: var(--text-color);
   opacity: 0.7;
 }
 
 .searchbar:focus {
   outline: none;
   color: #fff;
-  box-shadow: 0 0 15px 2px #a259ff;
 }
 
-#category-selector {
-    width: 200px;
-  padding: 1vw;
-    font-size: 16px;
-    border: 2px solid var(--secondary-color);
-    border-radius: var(--border-radius);
-    background: var(--bg-2-color);
-    color: var(--text-color);
-    outline: none;
-    transition: border-color 0.3s ease;
-    cursor: pointer;
-  }
+#category-selector:focus {
+  border-color: var(--primary-color);
+}
 
-  #category-selector:focus {
-    border-color: var(--primary-color);
-  }
 
 .game {
-  margin: 5px;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 50px; /* Account for sidebar */
 }
+
 .game img {
-  margin: 10px;
-  width: 190px;
-  height: 195px;
+  width: 198px;
+  margin: 3px;
+  height: 128px;
   object-fit: cover;
-  border-radius: 20px;
-  background: var(--bg-2-color);
-  
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
+
 .game:hover img {
- transform: scale(1.05);
+  transform: scale(1.05);
   cursor: pointer;
   background-color: var(--primary-color);
-
 }
 
 .badge {
-   background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
   color: var(--text-color);
   font-size: 16px;
   padding: 2px 6px;
   border-radius: var(--border-radius);
   font-weight: 600;
+  border-radius: 10px;
 }
 
 .text {
@@ -138,10 +177,13 @@ h6 {
     transform: translate(-50%, 0%);
   }
 }
+
+
 @media screen and (max-width: 1000px) {
   .searchbar {
     width: 90%;
     padding: 15px;
+    margin-left: 20px; /* Smaller margin on mobile */
   }
 
   .searchbar:focus {

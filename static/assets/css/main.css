@@ -1,9 +1,12 @@
+
 body {
   color: #f5f5f5;
+  margin-left: 50px; /* Account for fixed sidebar */
 }
 
+
 .container {
-  background: #222;
+  background: var(--bg-2-color);
   border-radius: 16px;
   box-shadow: 0 4px 24px #000a;
   padding: 32px;
@@ -60,13 +63,16 @@ h1, h2 {
   }
   
   
+
+
   .settings-container {
-	background-color: #1a1a1a;
+	background-color: var(--bg-color);
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	max-width: 1200px;
 	margin: 100px auto 0 auto; 
+	margin-left: 50px; /* Account for sidebar */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
@@ -208,9 +214,10 @@ h1, h2 {
 	transform: translateY(2px);
   }
   
+
   .navbar {
 	box-sizing: border-box;
-	background-color: #1e1e1e;
+	background-color: var(--bg-color);
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 	transition: 0.2s ease-in-out;
 	border-radius: 20px;
@@ -402,6 +409,7 @@ h1, h2 {
 	}
   }
   
+
   /* game container thing  */
   .grid-wrapper {
 	display: flex;
@@ -410,16 +418,19 @@ h1, h2 {
 	width: 100%;
 	min-height: 100vh;
 	padding: 20px;
+	padding-left: 70px; /* Extra padding to account for sidebar */
   }
   
+
   .grid {
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 20px;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1100px; /* Reduced to account for sidebar */
 	margin: 0 auto;
+	margin-left: 50px; /* Push grid away from sidebar */
   }
   
   .game-container {
