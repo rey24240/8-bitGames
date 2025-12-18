@@ -420,7 +420,6 @@
     "image": "/img/games/the-impossible-quiz.png",
     "creator": "Splapp-me-do",
     "usesProxy": true,
-    "badge": "New! 🆕",
     "categories": ["Strategy"]
     },
      {
@@ -429,7 +428,6 @@
     "image": "/img/games/sausage-flip.jpeg",
     "creator": "Madbox",
     "usesProxy": true,
-    "badge": "New! 🆕",
     "categories": ["Strategy"]
     },
      {
@@ -437,7 +435,6 @@
      "url": "https://htmlxm.github.io/h/bitlife",
     "image": "/img/games/bitlife.png",
     "creator": "Candywriter,LLC",
-    "badge": "New! 🆕",
     "categories": [],
     "usesProxy": true
     },
@@ -446,7 +443,6 @@
      "url": "https://htmlxm.github.io/h2/boxing-physics-2",
     "image": "/img/games/boxing-physics-2.jpeg",
     "creator": "Cool Bears LLC",
-    "badge": "New! 🆕",
     "categories": [],
     "usesProxy": true
     },
@@ -455,7 +451,6 @@
      "url": "/misc/play/ultrakill.html",
     "image": "/img/games/ultrakill.jfif",
     "creator": "Bread",
-    "badge": "New! 🆕",
     "categories": [],
     "usesProxy": false
     },
@@ -464,8 +459,16 @@
      "url": "/misc/play/repo.html",
     "image": "/img/games/repo.jfif",
     "creator": "98Corbins",
-    "badge": "New! 🆕",
     "categories": [],
+    "usesProxy": false
+    },
+     {
+    "name": "Raft",
+     "url": "/misc/play/raft.html",
+    "image": "/img/games/raft.jpeg",
+    "creator": "Ashen Arrow",
+    "badge": "New! 🆕",
+    "categories": ["Action"],
     "usesProxy": false
     }
 ]
