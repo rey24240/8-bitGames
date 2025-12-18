@@ -43,5 +43,10 @@
       "name": "Instagram",
       "url": "https://www.instagram.com/",
       "image": "/img/apps/Instagram.jpeg"
+    },
+     {
+      "name": "9anime",
+      "url": "https://9animetv.to/",
+      "image": "/img/apps/9anime.jpeg"
     }
   ]

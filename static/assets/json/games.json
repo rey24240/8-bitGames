@@ -470,6 +470,15 @@
     "badge": "New! 🆕",
     "categories": ["Action"],
     "usesProxy": false
+    },
+      {
+    "name": "Escape Road",
+     "url": "/misc/play/escape-road.html",
+    "image": "/img/games/escape-road.jpeg",
+    "creator": "Ashen Arrow",
+    "badge": "New! 🆕",
+    "categories": ["Action","Racing","io"],
+    "usesProxy": false
     }
 ]
 
