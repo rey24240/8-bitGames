@@ -32,7 +32,7 @@
   },
   {
     "name": "Madalin Stunt Car 2",
-    "url": "/misc/play/madstunt-cars.html",
+    "url": "/misc/madstunt-cars",
     "image": "/img/games/madalin-stunt-car-2.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -40,7 +40,7 @@
   },
   {
     "name": "Bloxors",
-    "url": "/misc/play/bloxors.html",
+    "url": "/misc/bloxors",
     "image": "/img/games/bloxorz.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -64,7 +64,7 @@
   },
   {
     "name": "SchoolBoy Runaway",
-    "url": "/misc/play/schoolboy-runaway.html",
+    "url": "/misc/schoolboy-runaway",
     "image": "/img/games/SchoolBoy-Runaway.jpeg",
     "creator": "Linked Squad",
     "usesProxy": false,
@@ -72,7 +72,7 @@
   },
   {
     "name": "Speed Stars",
-    "url": "/misc/play/Speed-Stars.html",
+    "url": "/misc/Speed-Stars",
     "image": "/img/games/speed-stars.jpeg",
     "creator": "Luke Doukakis",
     "usesProxy": false,
@@ -88,7 +88,7 @@
   },
    {
     "name": "Retro Bowl",
-    "url": "/misc/play/retro-bowl.html",
+    "url": "/misc/retro-bowl",
     "image": "/img/games/Retro-bowl.png",
     "creator": "Unknown",
     "usesProxy": false,
@@ -96,7 +96,7 @@
   },
   {
     "name": "Crossy Road",
-    "url": "/misc/play/crossy.html",
+    "url": "/misc/crossy",
     "image": "/img/games/crossy road.jpg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -104,7 +104,7 @@
   },
    {
     "name": "Fears Of Fathom: Home Alone",
-    "url": "/misc/play/fears-of-fathom-home-alone.html",
+    "url": "/misc/fears-of-fathom-home-alone",
     "image": "/img/games/fears of fathom home alone.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -112,7 +112,7 @@
   },
     {
     "name": "Monkey Mart",
-    "url": "/misc/play/MonkeyMart.html",
+    "url": "/misc/MonkeyMart",
     "image": "/img/games/monkey-mart.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -152,7 +152,7 @@
   },
   {
     "name": "Gladihoppers",
-    "url": "/misc/play/gladihoppers.html",
+    "url": "/misc/gladihoppers",
     "image": "/img/games/gladihoppers.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -160,7 +160,7 @@
   },
    {
     "name": "BuckShot Roulette",
-    "url": "/misc/play/buckshot-roulette.html",
+    "url": "/misc/buckshot-roulette",
     "image": "/img/games/BuckShot Roulette.jfif",
     "creator": "Unknown",
     "usesProxy": false,
@@ -168,7 +168,7 @@
   },
   {
     "name": "Geometry Dash Lite",
-    "url": "/misc/play/geomerty dash lite.html",
+    "url": "/misc/geomerty dash lite",
     "image": "/img/games/geometry-dash-lite.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -176,7 +176,7 @@
   },
    {
     "name": "Baldi-Plus",
-    "url": "/misc/play/baldi-plus.html",
+    "url": "/misc/baldi-plus",
     "image": "/img/games/baldi-plus.jpg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -192,7 +192,7 @@
   },
    {
     "name": "Basketball Stars",
-    "url": "/misc/play/basketball-stars.html",
+    "url": "/misc/basketball-stars",
     "image": "/img/games/basketball-stars.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -200,7 +200,7 @@
   },
    {
     "name": "Learn to Fly",
-    "url": "/misc/play/learn-to-fly.html",
+    "url": "/misc/learn-to-fly",
     "image": "/img/games/learn-to-fly.jpeg",
     "creator": "Light Bringer",
     "usesProxy": false,
@@ -224,7 +224,7 @@
   },
     {
     "name": "Crazy Cattle 3D",
-    "url": "/misc/play/crazycattle.html",
+    "url": "/misc/crazycattle",
     "image": "/img/games/crazy cattle 3d.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -232,7 +232,7 @@
     },
      {
     "name": "Flappy Bird",
-    "url": "/misc/play/flappybird.html",
+    "url": "/misc/flappybird",
     "image": "/img/games/flappy bird.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -240,7 +240,7 @@
     },
      {
     "name": "FNAF",
-    "url": "/misc/play/fnaf.html",
+    "url": "/misc/fnaf",
     "image": "/img/games/fnaf.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -256,7 +256,7 @@
     },
     {
     "name": "Snow Rider 3d",
-    "url": "/misc/play/snowrider.html",
+    "url": "/misc/snowrider",
     "image": "/img/games/snowrider3d.jfif",
     "creator": "Unknown",
     "usesProxy": false,
@@ -280,7 +280,7 @@
     },
      {
     "name": "Rooftop Snipers",
-    "url": "/misc/play/rooftop-snipers.html",
+    "url": "/misc/rooftop-snipers",
     "image": "/img/games/Rooftop snipers.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -312,7 +312,7 @@
     },
     {
     "name": "Tag",
-    "url": "/misc/play/tag.html",
+    "url": "/misc/tag.html",
     "image": "/img/games/Tag.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -320,7 +320,7 @@
     },
     {
     "name": "Tag 2",
-    "url": "/misc/play/tag-2.html",
+    "url": "/misc/tag-2",
     "image": "/img/games/Tag 2.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -328,7 +328,7 @@
     },
     {
     "name": "Soccer Random",
-    "url": "/misc/play/soccer-random.html",
+    "url": "/misc/soccer-random",
     "image": "/img/games/Soccer Random.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -336,7 +336,7 @@
     },
     {
     "name": "Basket Random",
-    "url": "/misc/play/basket-random.html",
+    "url": "/misc/basket-random",
     "image": "/img/games/Basket Random.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -344,7 +344,7 @@
     },
     {
     "name": "Granny 3",
-    "url": "/misc/play/granny-3.html",
+    "url": "/misc/granny-3",
     "image": "/img/games/granny-3.jpeg",
     "creator": "Unknown",
     "usesProxy": false,
@@ -352,7 +352,7 @@
     },
     {
     "name": "Clash of Vikings",
-    "url": "/misc/play/clash-of-vikings.html",
+    "url": "/misc/clash-of-vikings",
     "image": "/img/games/Clash of Vikings.webp",
     "creator": "Unknown",
     "usesProxy": false,
@@ -360,7 +360,7 @@
     },
     {
     "name": "Bad Parenting",
-    "url": "/misc/play/bad-parenting.html",
+    "url": "/misc/bad-parenting",
     "image": "/img/games/bad parenting.jfif",
     "creator": "",
     "usesProxy": false,
@@ -392,7 +392,7 @@
     },
       {
     "name": "Bow Masters",
-    "url": "/misc/play/0.html",
+    "url": "/misc/0",
     "image": "/img/games/bowmasters.jpeg",
     "creator": "Playgendary",
     "usesProxy": false,
@@ -448,7 +448,7 @@
     },
      {
     "name": "ultraKill",
-     "url": "/misc/play/ultrakill.html",
+     "url": "/misc/ultrakill",
     "image": "/img/games/ultrakill.jfif",
     "creator": "Bread",
     "categories": [],
@@ -456,7 +456,7 @@
     },
      {
     "name": "R.E.P.O",
-     "url": "/misc/play/repo.html",
+     "url": "/misc/repo",
     "image": "/img/games/repo.jfif",
     "creator": "98Corbins",
     "categories": [],
@@ -464,21 +464,91 @@
     },
      {
     "name": "Raft",
-     "url": "/misc/play/raft.html",
+     "url": "/misc/raft",
     "image": "/img/games/raft.jpeg",
     "creator": "Ashen Arrow",
-    "badge": "New! 🆕",
     "categories": ["Action"],
     "usesProxy": false
     },
       {
     "name": "Escape Road",
-     "url": "/misc/play/escape-road.html",
+     "url": "/misc/escape-road",
     "image": "/img/games/escape-road.jpeg",
     "creator": "Ashen Arrow",
-    "badge": "New! 🆕",
-    "categories": ["Action","Racing","io"],
+    "categories": ["Drift","Racing","io"],
     "usesProxy": false
+    },
+      {
+    "name": "KnifeHit",
+     "url": "/misc/knifehit",
+    "image": "/img/games/knifehit.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Action"],
+    "usesProxy": false
+    },
+      {
+    "name": "HotLineMiami",
+     "url": "/misc/hotlinemiami",
+    "image": "/img/games/hotlinemiami.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Action"],
+    "usesProxy": false
+    },
+      {
+    "name": "JellyDrift",
+     "url": "/misc/jellydrift",
+    "image": "/img/games/jellydrift.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Drift","Racing"],
+    "usesProxy": false
+    },
+      {
+    "name": "KiwiClicker",
+     "url": "/misc/kiwiclicker",
+    "image": "/img/games/kiwiclicker.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Clicker"],
+    "usesProxy": false
+    },
+      {
+    "name": "Soccer Bros",
+     "url": "/misc/soccer-bros",
+    "image": "/img/games/soccer bros.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Sports","2 player"],
+    "usesProxy": false
+    },
+      {
+    "name": "Football Bros",
+     "url": "/misc/football-bros",
+    "image": "/img/games/football bros.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Sports","2 player"],
+    "usesProxy": false
+    },
+      {
+    "name": "Infinite Craft",
+     "url": "https://infinite-craft.com/infinite-craft/",
+    "image": "/img/games/infinite-craft.png",
+    "badge": "New! 🆕",
+    "categories": ["Clicker"],
+    "usesProxy": true
+    },
+      {
+    "name": "Baseball Bros",
+     "url": "/misc/baseball-bros",
+    "image": "/img/games/baseball bros.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Sports","2 player"],
+    "usesProxy": false
+    },
+     {
+    "name": "basketball Bros",
+     "url": "https://abinbins.github.io/a7/basket-bros",
+    "image": "/img/games/basketball bros.jpeg",
+    "badge": "New! 🆕",
+    "categories": ["Sports","2 player"],
+    "usesProxy": true
     }
 ]
 

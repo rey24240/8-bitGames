@@ -6,108 +6,25 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-      <link rel="stylesheet" href="/assets/css/theme.css" />
   <script src="/assets/js/frame.js?v=7"></script>
   <script crossorigin="anonymous" src="/assets/js/font.js"></script>
     <link rel="stylesheet" href="/assets/css/sidebar.css?v=3" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="/assets/css/particle.css" />
-  <link href="/assets/css/gameframe.css?2" rel="stylesheet" />
+  <link href="/assets/css/science.css?2" rel="stylesheet" />
 </head>
 
+   
+  </div>
 
-  <div class="sidebar">
-        <!-- Logo at the top of the sidebar with link -->
-        <a href="/index.html" class="logo-link">
-        <img class="logo" src="img/images.png">
-        </a>
-        
-        <!-- Divider line -->
-        <div class="divider"></div>
+  <iframe src="" id="iframeid" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none; margin: 0; padding: 0;" name="Iframe" scrolling="yes"
+    frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
 
-        <!-- Navigation items -->
-        <div class="nav-item"><a href="/index.html"><i class="fa fa-home" style="color:var(--text-color);"></i></a></div>
-        <div class="nav-item"><a href="/apps.html"><i class="fa fa-layer-group" style="color:var(--text-color);"></i></a></div> <!-- Account icon -->
-        <div class="nav-item selected"><a href="/games.html"><i class="fa fa-gamepad" style="color:var(--text-color);"></i></a></div> <!-- Joy-Con icon -->
-        
-        <!-- Divider line before About and Settings -->
-        <div class="divider"></div>
-
-        <!-- New "About" and "Settings" buttons at the bottom -->
-        <div class="nav-item"><a href="/aboutpage.html"><i class="fa fa-circle-info" style="color:var(--text-color);"></i></a></div>
-        <div class="nav-item"><a href="/settings.html"><i class="fa fa-cogs" style="color:var(--text-color);"></i></a></div>
-    </div>
-    
-     <div theme="v6">
-         <div id="blobs">
-             <div class="gradiant"></div>
-             <div class="gradiant2"></div>
-             <div class="gradiant3"></div>
-         </div>
      </div>
- </div>
- <!-- End sidebar -->
-
- <div id="gameframe">
-        <div class="gameDisplay">
-            <div class="game">
-             <iframe id="iframeid" src=""></iframe>
-           </div>
-            <div class="options">
-                <div class="left">
-                    <div class="gametext">
-                        <img src="" class="gameicon" />
-                        <div class="margin">
-                            <div class="flex">
-                                <h1 class="titletext"></h1>
-                            </div>
-                            <span class="bytext"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <i class="fa-solid fa-rotate-right reloadbtn" id="reloadbtn"></i>
-                    <i class="fa-solid fa-expand fullscreenbtn" onclick="fullscreen();"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        var elem = document.getElementById("iframeid");
-
-        function fullscreen() {
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.webkitRequestFullscreen) {
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            }
-        }
-        function reload() {
-            document.getElementById("iframeid").src += "";
-        }
-        reloadbtn.onclick = reload;
-
-        document.addEventListener('fullscreenchange', function() {
-            if (!document.fullscreenElement) {
-                // Reset iframe styles when exiting fullscreen to fix bug
-                elem.style.width = '';
-                elem.style.height = '';
-                elem.style.position = '';
-                elem.style.top = '';
-                elem.style.left = '';
-            }
-        });
-    </script>
-
-
-    </div>
 
         <!-- FPS Counter -->
-        <div id="fps-counter" style="position:fixed;bottom:10px;right:10px;color:var(--text-color);background:var(--bg-color);padding:5px 10px;border-radius:5px;z-index:9999;font-family:monospace;"></div>
+        <div id="fps-counter" style="position:fixed;bottom:10px;right:10px;color:white;background:black;padding:5px 10px;border-radius:5px;z-index:9999;font-family:monospace;"></div>
         <!-- Real-time Date and Time -->
 
     
@@ -129,113 +46,7 @@ function updateFPS() {
 }
 updateFPS();
 </script>
-<!-- Auto-fill game title from games.json -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    try {
-        const img = document.querySelector('.gameicon');
-        if (!img) return;
-        // Normalize image pathname
-        const imgPath = (function () {
-            try { return new URL(img.src, location.origin).pathname; } catch (e) { return img.getAttribute('src'); }
-        })();
-
-        fetch('/assets/json/games.json')
-            .then(function (res) { return res.json(); })
-            .then(function (games) {
-                const filename = imgPath.split('/').pop();
-                                var match = games.find(function (g) {
-                                        if (!g.image) return false;
-                                        // compare by filename or full path
-                                        var gImgPath;
-                                        try { gImgPath = new URL(g.image, location.origin).pathname; } catch (e) { gImgPath = g.image; }
-                                        return gImgPath === imgPath || gImgPath.split('/').pop() === filename;
-                                });
-                                // Fallbacks: try matching by sessionStorage gameUrl first
-                                if (!match) {
-                                    var gameUrl = sessionStorage.getItem("gameUrl");
-                                    if (gameUrl) {
-                                        match = games.find(function (g) {
-                                            return g.url === gameUrl;
-                                        });
-                                    }
-                                }
-                                if (!match) {
-                                    // try matching by URL filename (useful if the iframe or page encodes the game)
-                                    var iframe = document.getElementById('iframeid') || document.getElementById('iframe');
-                                    var iframePath = '';
-                                    try { iframePath = iframe && new URL(iframe.src, location.origin).pathname; } catch (e) { iframePath = iframe && iframe.getAttribute && iframe.getAttribute('src') || ''; }
-                                    var iframeFile = iframePath.split('/').pop();
-                                    if (iframeFile) {
-                                        match = games.find(function (g) {
-                                            if (!g.url) return false;
-                                            try {
-                                                var gUrlPath = new URL(g.url, location.origin).pathname;
-                                                return gUrlPath.split('/').pop() === iframeFile || g.url.includes(iframeFile);
-                                            } catch (e) {
-                                                return (g.url || '').includes(iframeFile);
-                                            }
-                                        });
-                                    }
-                                }
-                                if (!match) {
-                                    var currentTitle = (document.querySelector('.titletext') || {}).textContent || '';
-                                    currentTitle = currentTitle && currentTitle.trim();
-                                    if (currentTitle) {
-                                        match = games.find(function (g) {
-                                            return g.name && g.name.trim().toLowerCase() === currentTitle.toLowerCase();
-                                        });
-                                    }
-                                }
-                        if (match) {
-                            var titleEl = document.querySelector('.titletext');
-                            if (titleEl) titleEl.textContent = match.name;
-                            var byEl = document.querySelector('.bytext');
-                            if (byEl && match.creator) byEl.textContent = "By " + match.creator;
-                            // Update the displayed game image if the JSON provides one
-                            if (match.image) {
-                                var icon = document.querySelector('.gameicon');
-                                if (icon) icon.src = match.image;
-                            }
-                            // If there's an iframe showing the game, set its src from the JSON (if present)
-                            try {
-                            if (match.usesProxy && match.url) {
-                                try {
-                                    if (window.__uv$config && typeof __uv$config.encodeUrl === 'function') {
-                                        const encoded = __uv$config.encodeUrl(match.url);
-                                        const proxied = (__uv$config.prefix || '/assets/uv/service/') + encoded;
-                                        const iframe = document.getElementById('iframeid') || document.getElementById('iframe');
-                                        if (iframe) iframe.src = proxied;
-                                    } else if (window.__uv && typeof __uv.encodeUrl === 'function') {
-                                        // fallback if different global
-                                        const encoded = __uv.encodeUrl(match.url);
-                                        const proxied = (__uv$config && __uv$config.prefix ? __uv$config.prefix : '/assets/uv/service/') + encoded;
-                                        const iframe = document.getElementById('iframeid') || document.getElementById('iframe');
-                                        if (iframe) iframe.src = proxied;
-                                    }
-                                } catch (e) {
-                                    console.warn('Failed to set proxied iframe src', e);
-                                }
-                            } else {
-                                var iframe = document.getElementById('iframeid') || document.getElementById('iframe');
-                                if (iframe && match.url) {
-                                    iframe.src = match.url;
-                                }
-                                }
-                            } catch (e) { /* ignore cross-origin or missing iframe */ }
-                        }
-            })
-            .catch(function (err) { console.warn('Failed to load games.json', err); });
-    } catch (e) { console.warn('Auto-fill title failed', e); }
-});
-</script>
-
-  <script>
-        const params = new URLSearchParams(window.location.search);
-        const url = "/misc/";
-
-
-    </script>
 <script src="assets/uv/uv.bundle.js" defer></script>
 <script src="assets/uv/uv.config.js?cdn" defer></script>
+
 </html>
