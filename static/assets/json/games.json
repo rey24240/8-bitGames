@@ -482,7 +482,6 @@
     "name": "KnifeHit",
      "url": "/misc/knifehit",
     "image": "/img/games/knifehit.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Action"],
     "usesProxy": false
     },
@@ -490,7 +489,6 @@
     "name": "HotLineMiami",
      "url": "/misc/hotlinemiami",
     "image": "/img/games/hotlinemiami.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Action"],
     "usesProxy": false
     },
@@ -498,7 +496,6 @@
     "name": "JellyDrift",
      "url": "/misc/jellydrift",
     "image": "/img/games/jellydrift.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Drift","Racing"],
     "usesProxy": false
     },
@@ -506,7 +503,6 @@
     "name": "KiwiClicker",
      "url": "/misc/kiwiclicker",
     "image": "/img/games/kiwiclicker.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Clicker"],
     "usesProxy": false
     },
@@ -514,7 +510,6 @@
     "name": "Soccer Bros",
      "url": "/misc/soccer-bros",
     "image": "/img/games/soccer bros.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Sports","2 player"],
     "usesProxy": false
     },
@@ -522,7 +517,6 @@
     "name": "Football Bros",
      "url": "/misc/football-bros",
     "image": "/img/games/football bros.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Sports","2 player"],
     "usesProxy": false
     },
@@ -530,7 +524,6 @@
     "name": "Infinite Craft",
      "url": "https://infinite-craft.com/infinite-craft/",
     "image": "/img/games/infinite-craft.png",
-    "badge": "New! 🆕",
     "categories": ["Clicker"],
     "usesProxy": true
     },
@@ -538,7 +531,6 @@
     "name": "Baseball Bros",
      "url": "/misc/baseball-bros",
     "image": "/img/games/baseball bros.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Sports","2 player"],
     "usesProxy": false
     },
@@ -546,8 +538,51 @@
     "name": "basketball Bros",
      "url": "https://abinbins.github.io/a7/basket-bros",
     "image": "/img/games/basketball bros.jpeg",
-    "badge": "New! 🆕",
     "categories": ["Sports","2 player"],
+    "usesProxy": true
+    },
+      {
+    "name": "Escape Road 2",
+     "url": "https://game.azgame.io/escape-road-2/",
+    "image": "/img/games/escape-road-2.jpeg",
+    "creator": "AZ Games",
+    "badge": "New! 🆕",
+    "categories": ["Drift","Racing","io"],
+    "usesProxy": true
+    },
+     {
+    "name": "Escape Road City 2",
+     "url": "https://game.azgame.io/escape-road-city-2/",
+    "image": "/img/games/escape-road-city-2.jpeg",
+    "creator": "AZ Games",
+     "badge": "New! 🆕",
+    "categories": ["Drift","Racing","io"],
+    "usesProxy": true
+    },
+      {
+    "name": "Escape Road Halloween",
+     "url": "https://azgames.io/escape-road-halloween.embed",
+    "image": "/img/games/escape-road-halloween.jpeg",
+    "creator": "AZ Games",
+     "badge": "New! 🆕",
+    "categories": ["Drift","Racing","io"],
+    "usesProxy": true
+    },  {
+    "name": "Escape Road Winter",
+     "url": "https://azgames.io/escape-road-winter.embed",
+    "image": "/img/games/escape-road-winter.jpeg",
+    "creator": "AZ Games",
+    "badge": "New! 🆕",
+    "categories": ["Drift","Racing","io"],
+    "usesProxy": true
+    },
+      {
+    "name": "Escape Road City",
+     "url": "https://azgames.io/escape-road-city.embed",
+    "image": "/img/games/escape-road-city.jpeg",
+    "creator": "AZ Games",
+    "badge": "New! 🆕",
+    "categories": ["Drift","Racing","io"],
     "usesProxy": true
     }
 ]
